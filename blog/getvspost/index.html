@@ -18,49 +18,51 @@
 
 </head>
 
-<body class="h-card">
+<body>
     <header>
 
         <nav>
             <ol>
-              <li><a href="/" title="Home">Home</a></li>
-              <li><a href="/blog/" title="Blog">Blog</a></li>
-              <li><a href="/projects/" title="Portfolio">Projects</a></li>
+                <li><a href="/" title="Home">Home</a></li>
+                <li><a href="/blog/" title="Blog">Blog</a></li>
+                <li><a href="/projects/" title="Portfolio">Projects</a></li>
             </ol>
         </nav>
     </header>
-<h1>GET vs. POST Requests</h1>
 
-    <section>
-      <h3 class="p-name">27.03.17</h3>
-      <p> Amidst a learning spree on semantic HTML and the ways servers communicate with web browsers, I was introduced to 'GET' and 'POST' requests. </p>
+    <section class="h-entry">
+        <h1 class="p-name">GET vs. POST Requests</h1>
+        <time datetime="2017-03-27" class="dt-published">27.03.17</time>
+        <div class="e-content">
+            <p> Amidst a learning spree on semantic HTML and the ways servers communicate with web browsers, I was introduced to 'GET' and 'POST' requests. </p>
 
-      <p>These are HTTP (Hypertext Transfer Protocol - the language the browser uses to 'speak' with servers) request methods, typically used for sending and receiving data in forms. They are written like this inside the HTML5 form element:</p>
-      <p><img src="img/getpostmethods.jpg" alt="get and post methods"></p>
+            <p>These are HTTP (Hypertext Transfer Protocol - the language the browser uses to 'speak' with servers) request methods, typically used for sending and receiving data in forms. They are written like this inside the HTML5 form element:</p>
+            <p><img src="img/getpostmethods.jpg" alt="get and post methods"></p>
 
-      <p>The semantics behind the form element could form (see what I did there?) another lesson entirely. They are explained nicely <a href="https://internetingishard.com/html-and-css/forms/">here</a>.</p>
+            <p>The semantics behind the form element could form (see what I did there?) another lesson entirely. They are explained nicely <a href="https://internetingishard.com/html-and-css/forms/">here</a>.</p>
 
-      <p>GET and POST requests can be tricky to understand because some explanations are too techincal and miss the big picture. Here are some basics:
-          <p>
+            <p>GET and POST requests can be tricky to understand because some explanations are too techincal and miss the big picture. Here are some basics:
+                <p>
 
-              <ul>
-                  <li>GET requests are the default method used by browsers, meaning that if no method is specified, a GET request will be issued automatically.</li>
-                  <li>Both methods are able to send to and retrieve from data a server, however GET should only really be used as a 'getter' for retrieving data, because using it to send data raises some privacy issues.</li>
-                  <li>GET requests send information (name and value pairs in forms) within the URL of HTTP requests, rather than in the body. This means information submitted in a form will be visible in the URL. For example, when logging into a site, sensitive information such as a password would be part of the URL.</li>
-                  <li>In addition, a limited amount of data can be displayed in a URL. This means submitted data could be lost.</li>
-                  <li>POST requests send information in a separate header file. Data sent this way is also not encrypted, but is safer.</li>
+                    <ul>
+                        <li>GET requests are the default method used by browsers, meaning that if no method is specified, a GET request will be issued automatically.</li>
+                        <li>Both methods are able to send to and retrieve from data a server, however GET should only really be used as a 'getter' for retrieving data, because using it to send data raises some privacy issues.</li>
+                        <li>GET requests send information (name and value pairs in forms) within the URL of HTTP requests, rather than in the body. This means information submitted in a form will be visible in the URL. For example, when logging into a site,
+                            sensitive information such as a password would be part of the URL.</li>
+                        <li>In addition, a limited amount of data can be displayed in a URL. This means submitted data could be lost.</li>
+                        <li>POST requests send information in a separate header file. Data sent this way is also not encrypted, but is safer.</li>
 
-              </ul>
+                    </ul>
 
-              <p>This <a href="https://www.youtube.com/watch?v=9o_4lsOkQ3g&t=307s">video</a> gives a practical example and describes further differences between GET and POST (skip to 5:19).</p>
+                    <p>This <a href="https://www.youtube.com/watch?v=9o_4lsOkQ3g&t=307s">video</a> gives a practical example and describes further differences between GET and POST (skip to 5:19).</p>
+        </div>
+        <footer>
+            <small> © 2017 <a class="p-author h-card" href="https://amberwilson.co.uk/">Amber Wilson</a>.</small>
+        </footer>
+    </section>
 
-      <footer>
-          <small> © 2017 Amber Wilson.</small>
-      </footer>
-  </section>
 
-  <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
-  <script type="text/javascript" src="js/script.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
 </body>
 
 </html>
