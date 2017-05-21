@@ -4,22 +4,76 @@
         <name>Amber Wilson</name>
     </author>
     <title>Amber's Blog</title>
-    <link href="http://amberwilson.co.uk/blog-page/amber.atom" rel="self"/>
-    <id>http://amberwilson.co.uk/blog-page</id>
+    <link href="https://amberwilson.co.uk/blog/amber.atom" rel="self"/>
+    <id>https://amberwilson.co.uk/blog</id>
     <updated>2016-05-11T17:58:03Z</updated>
+    <entry>
+        <title>Mobile First</title>
+        <author>
+            <name>Amber Wilson</name>
+        </author>
+        <link href="https://amberwilson.co.uk/blog/mobilefirst/"/>
+        <id>https://amberwilson.co.uk/blog/mobilefirst/</id>
+        <updated>2017-05-19T12:28:53Z</updated>
+        <summary>
+          Switching to Mobile First using media queries.
+        </summary>
+        <content type="application/xhtml+xml" src="https://amberwilson.co.uk/blog/mobilefirst/"/>
+    </entry>
+    <entry>
+        <title>Btconf Düsseldorf 2017</title>
+        <author>
+            <name>Amber Wilson</name>
+        </author>
+        <link href="https://amberwilson.co.uk/blog/btconf/"/>
+        <id>https://amberwilson.co.uk/blog/btconf/</id>
+        <updated>2017-05-19T08:28:53Z</updated>
+        <summary>
+          My first conference experience.
+        </summary>
+        <content type="application/xhtml+xml" src="https://amberwilson.co.uk/blog/btconf/"/>
+    </entry>
+
+    <entry>
+        <title>HTTPS Poem</title>
+        <author>
+            <name>Amber Wilson</name>
+        </author>
+        <link href="https://amberwilson.co.uk/blog/httpspoem/"/>
+        <id>https://amberwilson.co.uk/blog/httpspoem/</id>
+        <updated>2017-05-08T13:32:43Z</updated>
+        <summary>
+          HTTPS explained in a slightly different format.
+        </summary>
+        <content type="application/xhtml+xml" src="https://amberwilson.co.uk/blog/httpspoem/"/>
+    </entry>
+
+    <entry>
+        <title>Storytelling</title>
+        <author>
+            <name>Amber Wilson</name>
+        </author>
+        <link href="https://amberwilson.co.uk/blog/storytelling/"/>
+        <id>https://amberwilson.co.uk/blog/storytelling/</id>
+        <updated>2017-05-08T13:23:29Z</updated>
+        <summary>
+          At Clearleft today, I participated in a storytelling workshop.
+        </summary>
+        <content type="application/xhtml+xml" src="https://amberwilson.co.uk/blog/storytelling/"/>
+    </entry>
 
     <entry>
         <title>What I Learned Today</title>
         <author>
             <name>Amber Wilson</name>
         </author>
-        <link href="http://amberwilson.co.uk/blog-page/wilt13april.html"/>
-        <id>http://amberwilson.co.uk/blog-page/wilt13april.html</id>
+        <link href="https://amberwilson.co.uk/blog/wilt13april/"/>
+        <id>https://amberwilson.co.uk/blog/wilt13april/</id>
         <updated>2017-04-13T19:32:43Z</updated>
         <summary>
           At Clearleft today, I ran through many new (and some familiar) things with Jeremy.
         </summary>
-        <content type="application/xhtml+xml" src="http://amberwilson.co.uk/blog-page/wilt13april.html"/>
+        <content type="application/xhtml+xml" src="https://amberwilson.co.uk/blog/wilt13april/"/>
     </entry>
 
     <entry>
@@ -27,13 +81,13 @@
         <author>
             <name>Amber Wilson</name>
         </author>
-        <link href="http://amberwilson.co.uk/blog-page/preparingtotalk.html"/>
-        <id>http://amberwilson.co.uk/blog-page/preparingtotalk.html</id>
+        <link href="https://amberwilson.co.uk/blog/preparingtotalk/"/>
+        <id>https://amberwilson.co.uk/blog/preparingtotalk/</id>
         <updated>2017-04-13T17:58:03Z</updated>
         <summary>
           It is T-minus 4 months and 3 days until I am due to give my first talk on web stuff at Material in Iceland. I decided to jump in the deep end with this one, but I'm relishing the challenge.
         </summary>
-        <content type="application/xhtml+xml" src="http://amberwilson.co.uk/blog-page/preparingtotalk.html"/>
+        <content type="application/xhtml+xml" src="https://amberwilson.co.uk/blog/preparingtotalk/"/>
     </entry>
 
     <entry>
@@ -41,13 +95,13 @@
         <author>
             <name>Amber Wilson</name>
         </author>
-        <link href="http://amberwilson.co.uk/blog-page/cookies.html"/>
-        <id>http://amberwilson.co.uk/blog-page/cookies.html</id>
+        <link href="https://amberwilson.co.uk/blog/cookies/"/>
+        <id>https://amberwilson.co.uk/blog/cookies/</id>
         <updated>2017-04-10T17:58:03Z</updated>
         <summary>
             If you have a sweet tooth like me you might imagine a round, freshly-baked treat containing chocolate chips. Conversely, internet cookies (a.k.a. HTTP cookies) contain data, usually in the form of a text file.
         </summary>
-        <content type="application/xhtml+xml" src="http://amberwilson.co.uk/blog-page/cookies.html"/>
+        <content type="application/xhtml+xml" src="https://amberwilson.co.uk/blog/cookies/"/>
     </entry>
 
     <entry>
@@ -55,13 +109,13 @@
         <author>
             <name>Amber Wilson</name>
         </author>
-        <link href="http://amberwilson.co.uk/blog-page/ux-curriculum.html"/>
-        <id>http://amberwilson.co.uk/blog-page/ux-curriculum.html</id>
+        <link href="https://amberwilson.co.uk/blog/ux-curriculum/"/>
+        <id>https://amberwilson.co.uk/blog/ux-curriculum/</id>
         <updated>2017-04-08T17:58:03Z</updated>
         <summary>
             Have you pursued higher education or years of work experience in a field unrelated to design? Live in a city but don’t have the money or time to pursue a User Experience or Human-Computer Interaction degree?
         </summary>
-        <content type="application/xhtml+xml" src="http://amberwilson.co.uk/blog-page/ux-curriculum.html"/>
+        <content type="application/xhtml+xml" src="https://amberwilson.co.uk/blog/ux-curriculum/"/>
     </entry>
 
     <entry>
@@ -69,13 +123,13 @@
         <author>
             <name>Amber Wilson</name>
         </author>
-        <link href="http://amberwilson.co.uk/blog-page/getvspost.html"/>
-        <id>http://amberwilson.co.uk/blog-page/getvspost.html</id>
+        <link href="https://amberwilson.co.uk/blog/getvspost/"/>
+        <id>https://amberwilson.co.uk/blog/getvspost/</id>
         <updated>2017-03-27T17:58:03Z</updated>
         <summary>
             Amidst a learning spree on semantic HTML and the ways servers communicate with web browsers, I was introduced to 'GET' and 'POST' requests.
         </summary>
-        <content type="application/xhtml+xml" src="http://amberwilson.co.uk/blog-page/getvspost.html"/>
+        <content type="application/xhtml+xml" src="https://amberwilson.co.uk/blog/getvspost/"/>
     </entry>
 
     <entry>
@@ -83,14 +137,14 @@
         <author>
             <name>Amber Wilson</name>
         </author>
-        <link href="http://amberwilson.co.uk/blog-page/markup-masterclass.html"/>
-        <id>http://amberwilson.co.uk/blog-page/markup-masterclass.html</id>
+        <link href="https://amberwilson.co.uk/blog/markup-masterclass/"/>
+        <id>https://amberwilson.co.uk/blog/markup-masterclass/</id>
         <updated>2017-03-16T17:58:03Z</updated>
         <summary>
             Today I spent a great day at Clearleft, soaking in the lovely atmosphere, chatting with the wonderful staff. I sat down in the morning to talk with Jeremy about the web and the internet, web apps and native apps. We chatted about tech company
             structures, job titles, career advice and much more.
         </summary>
-        <content type="application/xhtml+xml" src="http://amberwilson.co.uk/blog-page/markup-masterclass.html"/>
+        <content type="application/xhtml+xml" src="https://amberwilson.co.uk/blog/markup-masterclass/"/>
     </entry>
 
     <entry>
@@ -98,14 +152,14 @@
         <author>
             <name>Amber Wilson</name>
         </author>
-        <link href="http://amberwilson.co.uk/blog-page/webvsinternet.html"/>
-        <id>http://amberwilson.co.uk/blog-page/webvsinternet.html</id>
+        <link href="https://amberwilson.co.uk/blog/webvsinternet/"/>
+        <id>https://amberwilson.co.uk/blog/webvsinternet/</id>
         <updated>2017-03-16T13:05:10Z</updated>
         <summary>
             I was tasked by Jeremy to explore the differences between the Internet and The World Wide Web. At the start, I was hard pressed to explain them. All I knew is that the 'Web' was created by someone called Tim Berners-Lee. I thought this meant he'd
             invented the entire Internet. I soon realised how wrong I was.
         </summary>
-        <content type="application/xhtml+xml" src="http://amberwilson.co.uk/blog-page/webvsinternet.html"/>
+        <content type="application/xhtml+xml" src="https://amberwilson.co.uk/blog/webvsinternet/"/>
     </entry>
 
     <entry>
@@ -113,14 +167,14 @@
         <author>
             <name>Amber Wilson</name>
         </author>
-        <link href="http://amberwilson.co.uk/blog-page/podcasts.html"/>
-        <id>http://amberwilson.co.uk/blog-page/podcasts.html</id>
+        <link href="https://amberwilson.co.uk/blog/podcasts/"/>
+        <id>https://amberwilson.co.uk/blog/podcasts/</id>
         <updated>2017-03-07T13:05:10Z</updated>
         <summary>
             Let’s talk about podcasts. I have always liked the idea of them. Like audio books, you can take them anywhere and listen anytime. They enable you to access up-to-date, current opinions on just about any facet of life you can think of. If you’re
             wondering whether there is a podcast on a topic you’re interested in, I can bet you there is.
         </summary>
-        <content type="application/xhtml+xml" src="http://amberwilson.co.uk/blog-page/podcasts.html"/>
+        <content type="application/xhtml+xml" src="https://amberwilson.co.uk/blog/podcasts/"/>
     </entry>
 
     <entry>
@@ -128,14 +182,14 @@
         <author>
             <name>Amber Wilson</name>
         </author>
-        <link href="http://amberwilson.co.uk/blog-page/mentorship.html"/>
-        <id>http://amberwilson.co.uk/blog-page/mentorship.html</id>
+        <link href="https://amberwilson.co.uk/blog/mentorship/"/>
+        <id>https://amberwilson.co.uk/blog/mentorship/</id>
         <updated>2017-03-06T17:58:03Z</updated>
         <summary>
             It was around October last year when I arrived at 68 Middle Street for a codebar session. It was the first time I had been in the building and I was immediately struck by how spaceous and well-designed it was. Even if I wasn't entirely sure what
             people did there.
         </summary>
-        <content type="application/xhtml+xml" src="http://amberwilson.co.uk/blog-page/mentorship.html"/>
+        <content type="application/xhtml+xml" src="https://amberwilson.co.uk/blog/mentorship/"/>
     </entry>
 
     <entry>
@@ -143,13 +197,13 @@
         <author>
             <name>Amber Wilson</name>
         </author>
-        <link href="http://amberwilson.co.uk/blog-page/German-trip.html"/>
-        <id>http://amberwilson.co.uk/blog-page/German-trip.html</id>
+        <link href="https://amberwilson.co.uk/blog/German-trip/"/>
+        <id>https://amberwilson.co.uk/blog/German-trip/</id>
         <updated>2017-03-02T13:05:10Z</updated>
         <summary>
             A week in my favourite country of all. An incredible time with wonderful friends ❤
         </summary>
-        <content type="application/xhtml+xml" src="http://amberwilson.co.uk/blog-page/German-trip.html"/>
+        <content type="application/xhtml+xml" src="https://amberwilson.co.uk/blog/German-trip/"/>
     </entry>
 
 </feed>

@@ -1,0 +1,106 @@
+/*Clearfix*/
+
+.cf:before,
+.cf:after {
+    content: " ";
+    display: table;
+}
+
+.cf:after {
+    clear: both;
+}
+
+.cf {
+    *zoom: 1;
+}
+
+/*General Style*/
+
+* {
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body {
+    margin: 0;
+    max-width: 800px;
+    margin: auto;
+    background-color: white;
+    color: #000;
+    font-family: sans-serif;
+    font-size: 1.1em;
+}
+
+h2 {
+  text-align: center;
+  font-weight: bold;
+  font-size: 1em;
+  color: #0c83cc;
+  padding-top: 1em;
+}
+
+p {
+    line-height: 1.2em;
+}
+
+ol {
+    margin-left: 0;
+    padding-right: 0;
+    list-style-type: none;
+    display: inline;
+    padding: 0;
+}
+
+
+
+dl dt,
+dl dd {
+  display:inline-block;
+  *display:inline;
+  zoom:1;
+  letter-spacing:normal;
+  word-spacing:normal;
+  vertical-align:top;
+  margin:0;
+}
+
+dl dt{
+  font-weight:600;
+  width:48%;
+  padding: 0 2% 0.5em 0;
+}
+
+dl dd{
+  margin-right:-1px;
+  width:50%;
+  padding: 0 0 0.5em 0;
+}
+
+ol li {
+  display: inline-block;
+}
+
+a {
+    color: #000;
+    text-decoration: underline;
+}
+
+.onethird {
+    width: 26%;
+    padding: 1.5em;
+}
+
+.twothirds {
+    width: 74%;
+    font-size: 0.8em;
+    padding: 2em;
+}
+
+/*Responsive*/
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait), only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape), only screen and (max-width: 768px) {
+  body {
+      width: 90%;
+      text-align: justify;
+  }
+}

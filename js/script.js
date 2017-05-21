@@ -11,33 +11,10 @@
  *   e.g. if using an unusual algorithm then how and what.
  */
 
-$(document).ready(function() {
-    // Hide the cross and menu on big screens
-    $(".cross").hide();
-    $(".mobileMenu").hide();
-
-    $(".hamburger").click(function() {
-        $(".mobileMenu").slideToggle("slow", function() {
-            $(".hamburger").hide();
-            $(".cross").show();
-        });
-    });
-
-
-    $(".cross").click(function() {
-        $(".mobileMenu").slideToggle("slow", function() {
-            $(".cross").hide();
-            $(".hamburger").show();
-        });
-    });
-});
-
-
-
 // this is Google Analytics
 
 (function(i, s, o, g, r, a, m) {
-    i['GoogleAnalyticsObject'] = r;
+    i["GoogleAnalyticsObject"] = r;
     i[r] = i[r] || function() {
         (i[r].q = i[r].q || []).push(arguments)
     }, i[r].l = 1 * new Date();

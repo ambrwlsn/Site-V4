@@ -9,6 +9,10 @@ html, body {
     min-height: 100%;
 }
 
+img {
+  max-width: 100%;
+}
+
 body {
     font-family: 'Roboto', sans-serif;
     font-size: 24px;
@@ -35,7 +39,7 @@ footer {
 }
 
 .likes-svg, .media-svg {
-    width: 4%;
+    width: 8%;
     height: auto;
 }
 
@@ -70,7 +74,7 @@ footer {
     }
 }
 
-#homepage-main-header {
+.homepage-main-header {
     font-size: 3em;
     color: #3A343A;
     line-height: 1em;
@@ -116,7 +120,7 @@ nav a {
 }
 
 .more img, .smallerPictures img {
-    width: 45%;
+    width: 95%;
     height: auto;
     display: inline-block;
     padding-bottom: 0.5em;
@@ -125,7 +129,6 @@ nav a {
 .pictureBorder img {
   margin: 0 auto;
   border: 1px solid black;
-  max-width: 500px;
 }
 
 img.imageScaling {
@@ -144,8 +147,8 @@ img.imageScaling {
 .projects img {
     display: block;
     border: 1px solid black;
-    max-width: 45%;
-    max-height: auto;
+    width: 45%;
+    height: auto;
 }
 
 .morelink {
@@ -156,6 +159,7 @@ img.imageScaling {
 
 .bubble {
     position: relative;
+    line-height: 1.2em;
     font-size: .8em;
     padding: 15px;
     margin: 1em 0 3em;
@@ -196,6 +200,7 @@ img.imageScaling {
 .bubbley {
     font-size: .8em;
     position: relative;
+    line-height: 1.2em;
     padding: 15px;
     margin: 1em 0 3em;
     border: 5px solid #2F4F4F;
@@ -240,7 +245,7 @@ img.imageScaling {
 }
 
 .words-container h3 {
-    font-size: .9em;
+    font-size: 1.2em;
     font-family: 'Roboto', sans-serif;
   	padding: 0;
   	margin: 0;
@@ -248,7 +253,7 @@ img.imageScaling {
   	text-align: center;
 }
 
-@media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait), only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape), only screen and (max-width: 768px) {
+@media only screen and (min-width: 520px){
     body {
         background: linear-gradient(135deg, #fff 60%, #ffed4b 60%);
     }
@@ -256,45 +261,55 @@ img.imageScaling {
         max-width: 100%;
         height: auto;
         display: block;
-        font-size: 1em;
         margin: 0;
     }
+
+    .homepage-main-header {
+        color: #3A343A;
+        line-height: 1em;
+    }
+
     img.german-pictures {
-        width: 90%;
+        width: 40%;
         height: 90%;
         display: block;
-        margin: 0 auto;
     }
-    article h3 {
-      text-align: center;
+
+    .likes-svg, .media-svg {
+        width: 4%;
+        height: auto;
     }
-    .smallerPictures img {
-      width: 45%;
+
+    .more img, .smallerPictures img {
+      max-width: 45%;
       height: auto;
       display: inline-block;
       padding-bottom: 0.5em;
     }
+
+    .daily-pictures {
+      width: 90%;
+      height: auto;
+    }
+
+    .pictureBorder img {
+      max-width: 500px;
+    }
+
+    .projects img {
+      max-width:90%;
+      height: auto;
     }
 }
 
 /*Words Bubble Layout*/
 
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 520px) {
     .words-container {
+        font-size: .1em;
         width: 90%;
         text-align: center;
-    }
-}
-
-@media screen and (max-width: 568px) {
-    .words-container {
-        width: 90%;
-        text-align: center;
-    }
-
-@media screen and (max-width: 360px) {
-    .words-container {
-        max-width: 90%;
-        text-align: center;
+        font: 1em/1 Cambria, Georgia, sans-serif;
+        line-height: 1.2em margin-top: 1em;
     }
 }
