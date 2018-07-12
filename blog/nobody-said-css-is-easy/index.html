@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="author" content="Amber Wilson" />
+    <meta name="description" content="By Amber Wilson" />
+    <title>Nobody Said CSS Is Easy</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta property="og:title" content="Books">
+    <meta property="og:description" content="For almost two months, I have been working on a complex React project involving a complex SCSS implementation. I am new to such complex projects, and so have only just begun to really learn about what SCSS can do. And... there is a _lot_ to learn. But, it is a beautiful mess <3">
+    <meta property="og:image" content="">
+    <meta property="og:url" content="https://amberwilson.co.uk/blog/nobody-said-css-is-easy/">
+    <meta name="twitter:card" content="">
+    <meta name="twitter:site" content="">
+    <meta name="twitter:creator" content="@ambrwlsn90">
+    <meta name="twitter:title" property="og:title" content="">
+    <meta name="twitter:description" property="og:description" content="">
+    <meta name="twitter:url" property="og:url" content="">
+    <meta name="twitter:image" property="og:image" content="">
+    <link rel="stylesheet" href="/css/stylesheet.css">
+</head>
+
+
+<body>
+    <header>
+
+        <nav>
+            <ol>
+                <li><a href="/" title="Home">Home</a></li>
+                <li><a href="/blog/" title="Blog">Blog</a></li>
+                <li><a href="/projects/" title="Portfolio">Projects</a></li>
+            </ol>
+        </nav>
+    </header>
+
+    <section class="h-entry">
+        <h1 class="p-name">Nobody Said CSS Is Easy</h1>
+        <time datetime="2018-28-03" class="dt-published">28.03.18</time>
+        <div class="e-content">
+            <p>Wait, some people have said this. But I'd like to politely voice the opinion that they are wrong.</p>
+            <p>For almost two months, I have been working on a complex React project involving a complex SCSS implementation.
+                I am new to such complex projects, and so have only just begun to really learn about what SCSS can do. And...
+                there is a _lot_ to learn. But, it is a beautiful mess ❤️</p>
+            <p>Before diving into the project two months ago, I refreshed my awareness of <a href="https://sass-lang.com/guide">Sass basics</a>.
+                Then, I opened the project code in my text editor, and jumped in. I was dazzled by the lines and lines of
+                multi-coloured code, immediately puzzled when I saw countless @ $ _ and, something I hadn't expected - functions.
+                Up until now, I hadn't written much of my own SCSS, and to be honest, I still haven't. However, I am proud
+                that I wrote a fully-functioning each loop in SCSS last week :)</p>
+            <p>I was actually inspired to write this article after another fairly long struggle trying to style a component.
+                I had to add a focus state to a custom checkbox. This seemingly simple task led me down a few rabbit holes.
+                I learned a lot about the difficulties of styling a custom checkbox (i.e. one that is not browser-implemented).</p>
+
+            <figure>
+                <a href="https://developer.mozilla.org/en-US/docs/Learn/HTML/Forms/The_native_form_widgets"><img src="img/browser-checkbox.png" alt="Browser-implemented checkbox styles"></a>
+                <figcaption>^ Browser-implemented checkbox styles</figcaption>
+            </figure>
+            <figure>
+                <a href="http://wtfforms.com/"><img src="img/custom-checkbox.png" alt="Custom checkbox style"></a>
+                <figcaption>^ The custom checkbox style I wanted</figcaption>
+            </figure>
+
+            <p>After reading a few articles and finding lots of similar but differing opinions, I asked another developer,
+                <a href="http://nevanscott.com/">Nevan</a>, to come and help me. </p>
+            <pre><code>
+.cp-#{$type}__input:focus {
+    <strong>~</strong> .cp-#{$type}__dummy {
+        border-color: cp-get-color-action(cta);
+    }
+
+    <strong>~</strong> .cp-#{$type}__label {
+        font-weight: 700;
+    }
+}
+</code></pre>
+
+            <p>Above is code from the project. I knew I had to work on this specific piece of code in order to get a focus state
+                on the checkboxes. See the little tildes (<strong>~</strong>)? Nevan pointed out to me that these can be
+                used as a special CSS selector, making the <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/General_sibling_selectors">general sibling combinator</a>                possible.</p>
+            <img src="img/csslesson.jpg" alt="CSS lesson from a developer at my workplace">
+            <p>We talked through different CSS selectors and Nevan drew some out for me. Once I'd learned what the general sibling
+                combinator does, I was able to write the below code, which gave me a nice focus state for my checkbox:</p>
+            <pre><code>
+    .cp-#{$type}__input:checked:focus {
+        ~ .cp-#{$type}__dummy {
+            box-shadow: 0 0 0 0.075rem cp-get-color(base), 0 0 0 0.2rem cp-get-color-action(cta);
+        }  
+</pre>
+            </code>
+
+            <p>I have come to realise that a lovely side-effect of working on a large project & using SCSS has been an increasing
+                awareness of how & where to implement accessibility. I will write about this in another blog post. One thing
+                I gained a stronger awareness of (simply from working with checkboxes) is that it's important to progressively
+                enhance UI components, so that a fancy custom one is able to fall back to the default browser styles and
+                functionality. This way, a user can still access the UI if JavaScript or CSS fail.</p>
+            <p>In conclusion to my first two months on a big project, I now know that getting confused, spending a long time
+                studying many different files & folders, and asking other developers for help is a right of passage to becoming
+                a better developer. I completed <a href="https://flukeout.github.io/">CSS Diner</a> a long time ago. However,
+                nothing increases your learning power more than working on something big, real, confusing and frustrating
+                ;)
+            </p>
+        </div>
+
+
+    </section>
+    <footer>
+        <small> © 2018 <a class="p-author h-card" href="https://amberwilson.co.uk/">Amber Wilson</a>.</small>
+    </footer>
+
+    <script type="text/javascript" src="/js/script.js"></script>
+</body>
+
+</html>

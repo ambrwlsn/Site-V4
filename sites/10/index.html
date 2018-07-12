@@ -1,0 +1,402 @@
+<html>
+    
+    <head>
+    
+        <style>
+            * {
+                box-sizing: border-box;
+            }
+    
+            .container {
+                display: grid;
+                margin: auto;
+                max-width: 40em;
+                grid-template-columns: repeat(9, 1fr);
+                grid-template-rows: repeat(12, 70px);
+                margin-top: 1em;
+                box-shadow: 0 19px 38px rgba(0, 0, 0, 0.30), 0 15px 12px rgba(0, 0, 0, 0.22);
+                position: relative;
+            }
+    
+            .box1,
+            .box2,
+            .box3,
+            .box4,
+            .box5,
+            .box6,
+            .box7,
+            .box8 {
+                background: #A83270;
+            }
+    
+            .box9 {
+                background: linear-gradient(to right bottom, #A83270 50%, #2D1B50 50%);
+            }
+    
+            .box10,
+            .box11,
+            .box12,
+            .box13,
+            .box14,
+            .box15,
+            .box16 {
+                background: #B09ECE;
+            }
+    
+            .box17 {
+                background: linear-gradient(to right bottom, #B09ECE 50%, #2D1B50 50%);
+            }
+    
+            .box18 {
+                background: #2D1B50;
+            }
+    
+            .box19 {
+                background: linear-gradient(to left bottom, #EBDB15 50%, #EF9607 50%);
+            }
+    
+            .box20,
+            .box21,
+            .box22,
+            .box23,
+            .box24 {
+                background: #EBDB15;
+            }
+    
+            .box25 {
+                background: linear-gradient(to right bottom, #EBDB15 50%, #EB793D 50%);
+            }
+    
+            .box26,
+            .box27 {
+                background: #EB793D;
+            }
+    
+            .box28 {
+                background: #EF9607
+            }
+    
+            .box29 {
+                background: linear-gradient(to left bottom, #EBDB15 50%, #EF9607 50%);
+            }
+    
+            .box30,
+            .box31,
+            .box32 {
+                background: #EBDB15;
+            }
+    
+            .box33 {
+                background: linear-gradient(to right bottom, #EBDB15 50%, #EB793D 50%);
+            }
+    
+            .box34,
+            .box35,
+            .box36 {
+                background: #EB793D;
+            }
+    
+            .box37,
+            .box38 {
+                background: #BB2D21;
+            }
+    
+            .box39 {
+                background: linear-gradient(to left bottom, #E66E7A 50%, #BB2D21 50%);
+            }
+    
+            .box40 {
+                background: #E66E7A
+            }
+    
+            .box41 {
+                background: linear-gradient(to right bottom, #E66E7A 50%, #BB2D21 50%);
+            }
+    
+            .box42,
+            .box43,
+            .box44,
+            .box45 {
+                background: #BB2D21
+            }
+    
+            .box46,
+            .box47,
+            .box48,
+            .box50,
+            .box51,
+            .box52,
+            .box53,
+            .box54 {
+                background: #BB2D21
+            }
+    
+            .box49 {
+                background: linear-gradient(to top right, transparent 50%, #E66E7A 0) 0 0/50% 50% no-repeat,
+                linear-gradient(to top left, transparent 50%, #E66E7A 0) 100% 0/50% 50% no-repeat,
+                linear-gradient(to bottom right, transparent 50%, #BB2D21 0) 0 100%/50% 50% no-repeat,
+                linear-gradient(to bottom left, transparent 50%, #BB2D21 0) 100% 100%/50% 50% no-repeat,
+                linear-gradient(to top right, transparent 50%, #BB2D21 0) 100% 100%/50% 50% no-repeat,
+                linear-gradient(to bottom right, transparent 50%, #BB2D21 0) 100% 0/50% 50% no-repeat,
+                linear-gradient(to top left, transparent 50%, #BB2D21 0) 0 100%/50% 50% no-repeat,
+                linear-gradient(to bottom left, transparent 50%, #BB2D21 0) 0 0/50% 50% no-repeat;
+            }
+    
+            .box55,
+            .box56,
+            .box57,
+            .box58,
+            .box59,
+            .box60,
+            .box61,
+            .box62,
+            .box63,
+            .box64,
+            .box65,
+            .box66,
+            .box68,
+            .box69,
+            .box70,
+            .box70,
+            .box71,
+            .box72 {
+                background: #8B219A;
+            }
+    
+            .box67 {
+                background: linear-gradient(to top right, transparent 50%, #8B219A 0) 0 0/50% 50% no-repeat,
+                linear-gradient(to top left, transparent 50%, #8B219A 0) 100% 0/50% 50% no-repeat,
+                linear-gradient(to bottom right, transparent 50%, #E66E7A 0) 0 100%/50% 50% no-repeat,
+                linear-gradient(to bottom left, transparent 50%, #E66E7A 0) 100% 100%/50% 50% no-repeat,
+                linear-gradient(to top right, transparent 50%, #8B219A 0) 100% 100%/50% 50% no-repeat,
+                linear-gradient(to bottom right, transparent 50%, #8B219A 0) 100% 0/50% 50% no-repeat,
+                linear-gradient(to top left, transparent 50%, #8B219A 0) 0 100%/50% 50% no-repeat,
+                linear-gradient(to bottom left, transparent 50%, #8B219A 0) 0 0/50% 50% no-repeat;
+            }
+    
+            .box73,
+            .box74 {
+                background: #0E6461;
+            }
+    
+            .box75,
+            .box83 {
+                background: linear-gradient(to right bottom, #0E6461 50%, #E66E7A 50%);
+            }
+    
+            .box76 {
+                background: #E66E7A
+            }
+    
+            .box77,
+            .box87 {
+                background: linear-gradient(to left bottom, #0E7E92 50%, #E66E7A 50%);
+            }
+    
+            .box82 {
+                background: #0E6461
+            }
+    
+            .box78,
+            .box79,
+            .box80,
+            .box81,
+            .box88,
+            .box89,
+            .box90 {
+                background: #0E7E92;
+            }
+    
+            .box76,
+            .box84,
+            .box85,
+            .box86 {
+                background: #E66E7A
+            }
+    
+            .box91 {
+                background: linear-gradient(to right bottom, #67B1E3 50%, #1E56A8 50%);
+            }
+    
+            .box92,
+            .box93,
+            .box94,
+            .box95,
+            .box96 {
+                background: #1E56A8;
+            }
+    
+            .box97 {
+                background: linear-gradient(to left bottom, #113567 50%, #1E56A8 50%);
+            }
+    
+            .box98,
+            .box99 {
+                background: #113567;
+            }
+    
+            .box100,
+            .box101,
+            .box102,
+            .box103,
+            .box104,
+            .box105,
+            .box106 {
+                background: #489C34;
+            }
+    
+            .box107 {
+                background: linear-gradient(to left bottom, #0E5E2B 50%, #489C34 50%);
+            }
+    
+            .box108 {
+                background: #0E5E2B;
+            }
+    
+            .curious-zelda__container {
+                width: 55%;
+                height: auto;
+                position: absolute;
+                top: 44%;
+                left: 18%;
+            }
+
+            .centre-block {
+                text-align: center;
+                font-family: Verdana, serif;
+                margin: 2em 5em 2em 5em;
+                padding: 1em;
+                box-shadow: 0 19px 38px rgba(0, 0, 0, 0.30), 0 15px 12px rgba(0, 0, 0, 0.22);
+            }
+
+            .twitter-tweet {
+                margin: 0 auto;
+            }
+        </style>
+    
+    </head>
+    
+    <body>
+    <h1 class="centre-block">Flexible CSS Grid and linear-gradient Painting with SVG!</h1>
+        <div class="container">
+                <img src="img/curious-zelda.svg" alt="Curious Zelda" class="curious-zelda__container">
+            <div class="box box1"></div>
+            <div class="box box2"></div>
+            <div class="box box3"></div>
+            <div class="box box4"></div>
+            <div class="box box5"></div>
+            <div class="box box6"></div>
+            <div class="box box7"></div>
+            <div class="box box8"></div>
+            <div class="box box9"></div>
+            <div class="box box10"></div>
+            <div class="box box11"></div>
+            <div class="box box12"></div>
+            <div class="box box13"></div>
+            <div class="box box14"></div>
+            <div class="box box15"></div>
+            <div class="box box16"></div>
+            <div class="box box17"></div>
+            <div class="box box18"></div>
+            <div class="box box19"></div>
+            <div class="box box20"></div>
+            <div class="box box21"></div>
+            <div class="box box22"></div>
+            <div class="box box23"></div>
+            <div class="box box24"></div>
+            <div class="box box25"></div>
+            <div class="box box26"></div>
+            <div class="box box27"></div>
+            <div class="box box28"></div>
+            <div class="box box29"></div>
+            <div class="box box30"></div>
+            <div class="box box31"></div>
+            <div class="box box32"></div>
+            <div class="box box33"></div>
+            <div class="box box34"></div>
+            <div class="box box35"></div>
+            <div class="box box36"></div>
+            <div class="box box37"></div>
+            <div class="box box38"></div>
+            <div class="box box39"></div>
+            <div class="box box40"></div>
+            <div class="box box41"></div>
+            <div class="box box42"></div>
+            <div class="box box43"></div>
+            <div class="box box44"></div>
+            <div class="box box45"></div>
+            <div class="box box46"></div>
+            <div class="box box47"></div>
+            <div class="box box48"></div>
+            <div class="box box49"></div>
+            <div class="box box50"></div>
+            <div class="box box51"></div>
+            <div class="box box52"></div>
+            <div class="box box53"></div>
+            <div class="box box54"></div>
+            <div class="box box55"></div>
+            <div class="box box56"></div>
+            <div class="box box57"></div>
+            <div class="box box58"></div>
+            <div class="box box59"></div>
+            <div class="box box60"></div>
+            <div class="box box61"></div>
+            <div class="box box62"></div>
+            <div class="box box63"></div>
+            <div class="box box64"></div>
+            <div class="box box65"></div>
+            <div class="box box66"></div>
+            <div class="box box67"></div>
+            <div class="box box68"></div>
+            <div class="box box69"></div>
+            <div class="box box70"></div>
+            <div class="box box71"></div>
+            <div class="box box72"></div>
+            <div class="box box73"></div>
+            <div class="box box74"></div>
+            <div class="box box75"></div>
+            <div class="box box76"></div>
+            <div class="box box77"></div>
+            <div class="box box78"></div>
+            <div class="box box79"></div>
+            <div class="box box80"></div>
+            <div class="box box81"></div>
+            <div class="box box82"></div>
+            <div class="box box83"></div>
+            <div class="box box84"></div>
+            <div class="box box85"></div>
+            <div class="box box86"></div>
+            <div class="box box87"></div>
+            <div class="box box88"></div>
+            <div class="box box89"></div>
+            <div class="box box90"></div>
+            <div class="box box91"></div>
+            <div class="box box92"></div>
+            <div class="box box93"></div>
+            <div class="box box94"></div>
+            <div class="box box95"></div>
+            <div class="box box96"></div>
+            <div class="box box97"></div>
+            <div class="box box98"></div>
+            <div class="box box99"></div>
+            <div class="box box100"></div>
+            <div class="box box101"></div>
+            <div class="box box102"></div>
+            <div class="box box103"></div>
+            <div class="box box104"></div>
+            <div class="box box105"></div>
+            <div class="box box106"></div>
+            <div class="box box107"></div>
+            <div class="box box108"></div>
+        </div>
+    <div class="centre-block">
+        <p>Inspired by the lovely, tiny paintings by   <a href="http://www.matart.ca/">M. A. Tateishi</a> of the wonderful <a href="https://twitter.com/CuriousZelda">Curious Zelda</a>.</p>
+        <blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">Tiny paintings inspired by <a href="https://twitter.com/CuriousZelda?ref_src=twsrc%5Etfw">@CuriousZelda</a> 😻 <a href="https://t.co/v8XoHOgUhj">pic.twitter.com/v8XoHOgUhj</a></p>&mdash; m.a.tateishi (@matateishi) <a href="https://twitter.com/matateishi/status/986575834721828864?ref_src=twsrc%5Etfw">April 18, 2018</a></blockquote>
+        <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+    </div>
+        
+    
+    </body>
+    
+    
+    </html>

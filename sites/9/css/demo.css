@@ -1,0 +1,71 @@
+*, *::after, *::before {
+    box-sizing: border-box;
+}
+
+html {
+    background: #fff;
+}
+
+body {
+    min-height: 100vh;
+    color: #57585c;
+    color: var(--color-text);
+    background-color: #fff;
+    background-color: var(--color-background);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+
+/* Color scheme */
+
+.demo-ama {
+    --color-text: #9a9da7;
+    --color-background: #fff;
+    --color-link: #32343c;
+    --color-link-hover: #9a9da7;
+}
+
+.menu {
+    margin-right: -29vw;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    list-style: none;
+    z-index: 2;
+}
+
+.menu a {
+    margin-right: 20px;
+    padding: 1.25rem 0.5rem;
+    font-size: 1.6rem;
+    max-width: 140px;
+    font-weight: bold;
+    text-decoration: none;
+    display: flex;
+    align-items: flex-start;
+}
+
+.no-flexbox .no-flexboxtweener .menu {}
+
+.menu__item-name, .menu__item-label {
+    position: relative;
+    display: inline-block;
+}
+
+.menu__item-name {
+    font-size: 1.25em;
+}
+
+.menu__item-label {
+    margin: 0 0 0 0.5em;
+}
+
+@media screen and (max-width: 50em) {
+    html, body {
+        overflow-x: hidden;
+        width: 100vw;
+        height: 100%;
+    }
+}

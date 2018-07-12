@@ -1,0 +1,226 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css?family=Quicksand");
+* {
+  box-sizing: border-box; }
+
+html {
+  background: #fff; }
+
+body {
+  font-family: "Quicksand", sans-serif;
+  font-weight: 300;
+  margin: 0;
+  background-color: #fff;
+  margin-bottom: 1em; }
+
+nav a:link {
+  text-decoration: none;
+  font-weight: 600; }
+
+a {
+  font-family: "Quicksand", sans-serif;
+  text-decoration: none;
+  font-size: 1em;
+  letter-spacing: 2px;
+  position: relative;
+  transition: all 0.4s ease;
+  padding-right: 2vw;
+  color: #4f944f; }
+
+.no-margin {
+  margin: 0; }
+
+.logo-image {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center; }
+  .logo-image img {
+    margin-left: 0vw;
+    width: 39vw; }
+
+nav {
+  margin-top: 1em;
+  font-size: 3.6vw;
+  line-height: 4vh; }
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-around; }
+
+.logo-container img {
+  display: flex;
+  width: 40%;
+  height: auto;
+  margin-right: 2em; }
+
+.alison-profile {
+  width: 39vw;
+  margin-top: 2vh; }
+
+.mobile-greeting {
+  display: flex;
+  flex-direction: column;
+  font-size: 5vw;
+  width: 40vw;
+  margin-left: 12vw; }
+
+.pic-greeting-wrap {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between; }
+
+.intro-section {
+  display: flex;
+  flex-direction: column;
+  font-size: 1.2em; }
+  .intro-section p {
+    margin-bottom: 0; }
+
+.intro-section img {
+  display: flex;
+  flex-direction: row;
+  width: 50%;
+  border-top-left-radius: 50%;
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+  border-top-right-radius: 5px; }
+
+.title_style {
+  display: block;
+  line-height: 8rem; }
+
+.focal-point {
+  display: none; }
+
+.right {
+  height: 90px;
+  width: 45px; }
+
+.right {
+  border-radius: 0 90px 90px 0; }
+
+.main-text {
+  margin: 1vh 8vw;
+  top: 0;
+  right: 5px;
+  font-family: "Quicksand", serif; }
+
+.main-section {
+  font-family: "Quicksand", serif;
+  font-weight: 300;
+  font-size: 1.2em; }
+
+ul {
+  padding-left: 20px; }
+
+blockquote {
+  background: #f9f9f9;
+  border-left: 10px solid #ccc;
+  margin: 1.5em 10px;
+  padding: 0.5em 10px;
+  quotes: "“" "”" "‘" "’"; }
+
+blockquote:before {
+  color: #ccc;
+  content: "“";
+  font-size: 4em;
+  line-height: 0.1em;
+  margin-right: 0.25em;
+  vertical-align: -0.4em; }
+
+blockquote p {
+  display: inline; }
+
+@media only screen and (min-width: 800px) {
+  p {
+    margin-top: 0.5rem;
+    margin-bottom: 0; }
+  h1 {
+    font-size: 2.8rem;
+    color: white;
+    position: static; }
+  .mobile-greeting {
+    display: none; }
+  .focal-point {
+    background-color: #4f944f;
+    height: 100vh;
+    width: 50vw;
+    border-top-left-radius: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    right: 0;
+    top: 0;
+    transition: all 0.6s ease; }
+    .focal-point ul {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      position: fixed;
+      font-size: 3em;
+      line-height: 2em;
+      margin-left: 4vw;
+      color: white; }
+  .focal-point:hover {
+    background-color: #ffff66; }
+    .focal-point:hover ul {
+      color: black; }
+  body {
+    margin-bottom: 0; }
+  body::after {
+    display: none; }
+  .main-text {
+    margin-left: 1.5rem;
+    width: 48%;
+    padding: 10px;
+    display: flex;
+    flex-flow: column wrap;
+    font-family: "Quicksand", sans-serif;
+    margin-bottom: 2rem; }
+  .box {
+    flex: 1;
+    padding-top: 2rem; }
+  .profile-image {
+    flex: 2 0 0; }
+  .box img {
+    float: left;
+    margin: 0 10px 10px 0;
+    max-width: 40%;
+    height: auto; }
+  .logo-image img {
+    margin-top: 3.5vh;
+    margin-left: 0vw;
+    width: 20vw; }
+  nav {
+    font-size: 1.6vw; }
+  .logo-image nav {
+    margin-top: 2em; }
+  nav a:hover {
+    text-decoration: underline; }
+  .intro-section {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 1.3rem; }
+    .intro-section img {
+      width: 18vw;
+      height: auto;
+      border-top-left-radius: 50%;
+      border-bottom-right-radius: 5px;
+      border-bottom-left-radius: 5px;
+      border-top-right-radius: 5px; }
+    .intro-section p {
+      margin: 0 0 0 1rem;
+      line-height: 1.8rem; } }
+
+@-moz-document url-prefix() {
+  .focal-point ul {
+    margin-left: 7vw;
+    margin-top: 22vh; } }

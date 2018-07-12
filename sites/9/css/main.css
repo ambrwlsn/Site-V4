@@ -1,0 +1,126 @@
+@import url("https://fonts.googleapis.com/css?family=Quicksand");
+* {
+  box-sizing: border-box; }
+
+body {
+  font-family: "Quicksand", sans-serif;
+  font-weight: 400;
+  margin: 0;
+  background-color: #ccc; }
+
+body::after {
+  content: "Hello, Bonjour, Bom Dia";
+  width: 35vw;
+  height: 100%;
+  font-size: 1.7em;
+  color: white;
+  background: #6B76AC;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: -1;
+  margin: 0; }
+
+.title_style {
+  display: block;
+  line-height: 8rem; }
+
+h1 {
+  font-size: 2.8rem;
+  margin-bottom: 6rem;
+  margin-left: 4.5rem;
+  color: white; }
+
+.right {
+  height: 90px;
+  width: 45px; }
+
+.right {
+  border-radius: 0 90px 90px 0; }
+
+.main-navigation {
+  height: 150px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+
+.main-text {
+  margin-top: 0;
+  margin-left: 1.5rem;
+  width: 48%;
+  top: 0;
+  right: 5px;
+  font-family: "Quicksand", sans-serif;
+  font-weight: 600; }
+
+ul > li {
+  display: inline-block;
+  list-style-type: none;
+  padding-right: 5em; }
+
+ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  list-style: none; }
+
+@media only screen and (min-width: 800px) {
+  p {
+    margin-top: 0.5rem;
+    margin-bottom: 0; }
+  .focal-point {
+    background-color: #4f944f;
+    height: 100vh;
+    width: 50vw;
+    border-top-left-radius: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    right: 0;
+    top: 0; }
+  .focal-point:hover {
+    background-color: #ffff66; }
+  .focal-point:hover h1 {
+    color: black; }
+  body::after {
+    display: none; }
+  .main-text {
+    margin-left: 1.5rem;
+    width: 48%;
+    padding: 10px;
+    display: flex;
+    flex-flow: column wrap;
+    font-family: "Quicksand", sans-serif;
+    font-weight: 500;
+    margin-bottom: 2rem; }
+  .box {
+    flex: 1;
+    padding-top: 2rem; }
+  .profile-image {
+    flex: 2 0 0; }
+  .box img {
+    float: left;
+    margin: 0 10px 10px 0;
+    max-width: 40%;
+    height: auto; }
+  .intro-section {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 1.3rem; }
+    .intro-section img {
+      width: 40%;
+      height: auto;
+      border-top-left-radius: 50%;
+      border-bottom-right-radius: 5px;
+      border-bottom-left-radius: 5px;
+      border-top-right-radius: 5px; }
+    .intro-section p {
+      margin: 0 0 0 1rem;
+      line-height: 1.8rem;
+      font-size: 1.1rem; } }

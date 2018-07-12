@@ -27,3 +27,13 @@
 
 ga('create', 'UA-93042910-1', 'auto');
 ga('send', 'pageview');
+
+if (navigator.serviceWorker) {
+    navigator.serviceWorker.register('/serviceworker.js')
+        .then(function(registration) {
+            console.log('Success!', registration.scope);
+        })
+        .catch(function(error) {
+            console.log('Oh noes!', error);
+        });
+}

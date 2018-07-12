@@ -6,7 +6,347 @@
     <title>Amber's Blog</title>
     <link href="https://amberwilson.co.uk/blog/amber.atom" rel="self"/>
     <id>https://amberwilson.co.uk/blog</id>
-    <updated>2016-05-11T17:58:03Z</updated>
+    <updated>2018-06-07T18:02:56Z</updated>
+        <entry>
+            <title>New Camera</title>
+            <author>
+                    <name>Amber Wilson</name>
+            </author>
+            <link href="https://amberwilson.co.uk/blog/new-camera/"/>
+            <id>https://amberwilson.co.uk/blog/new-camera/</id>
+            <updated>2018-07-10T18:02:56Z</updated>
+            <summary>
+            </summary>
+            <content type="application/xhtml+xml" src="https://amberwilson.co.uk/blog/new-camera/"/>
+        </entry>
+        <entry>
+            <title>JSConf EU: Community Lounge</title>
+            <author>
+                    <name>Amber Wilson</name>
+            </author>
+            <link href="https://amberwilson.co.uk/blog/jsconfeu-community-lounge/"/>
+            <id>https://amberwilson.co.uk/blog/jsconfeu-community-lounge/</id>
+            <updated>2018-06-07T09:33:22Z</updated>
+            <summary>
+            </summary>
+            <content type="application/xhtml+xml" src="https://amberwilson.co.uk/blog/jsconfeu-community-lounge/"/>
+        </entry>
+        <entry>
+            <title>Pair Programming</title>
+            <author>
+                    <name>Amber Wilson</name>
+            </author>
+            <link href="https://amberwilson.co.uk/blog/pair-programming/"/>
+            <id>https://amberwilson.co.uk/blog/pair-programming/</id>
+            <updated>2018-05-06T22:28:14Z</updated>
+            <summary>
+               Firstly, what is pair programming? It’s two developers sitting together, usually at one computer, where one types code and the other checks the code. In essence it involves two developers who are thinking about different aspects of the same programming feature, and are constantly communicating in order to keep their understanding in sync. Some of you may know this already. Apart from this very short introduction, I can really only tell you about my own personal experiences with it.
+            </summary>
+            <content type="application/xhtml+xml" src="https://amberwilson.co.uk/blog/pair-programming/"/>
+        </entry>
+        <entry>
+            <title>Apart From Code</title>
+            <author>
+                    <name>Amber Wilson</name>
+            </author>
+            <link href="https://amberwilson.co.uk/blog/apartfromcode/"/>
+            <id>https://amberwilson.co.uk/blog/apartfromcode/</id>
+            <updated>2018-04-28T08:28:11Z</updated>
+            <summary>
+               Apart from code, what makes a good developer? After a brilliant meeting with Richard, the tech lead at
+                    my company, where we discussed my progress as a developer and what I could start aiming for, I came away
+                    with some (what I think are) really nice insights from our discussion. I want to share those here.
+            </summary>
+            <content type="application/xhtml+xml" src="https://amberwilson.co.uk/blog/apartfromcode/"/>
+        </entry>
+        <entry>
+            <title>JSUnconf</title>
+            <author>
+                    <name>Amber Wilson</name>
+            </author>
+            <link href="https://amberwilson.co.uk/blog/jsunconf/"/>
+            <id>https://amberwilson.co.uk/blog/jsunconf/</id>
+            <updated>2018-04-18T18:59:47Z</updated>
+            <summary>
+               The first unconf I’ve ever been to just wrapped up and it’s been a really great experience. Not least because
+                of the thoughtful, kind and funny people I was lucky enough to spend it with.
+            </summary>
+            <content type="application/xhtml+xml" src="https://amberwilson.co.uk/blog/jsunconf/"/>
+        </entry>
+        <entry>
+            <title>House Elves</title>
+            <author>
+                    <name>Amber Wilson</name>
+            </author>
+            <link href="https://amberwilson.co.uk/blog/house-elves/"/>
+            <id>https://amberwilson.co.uk/blog/house-elves/</id>
+            <updated>2018-04-02T19:15:27Z</updated>
+            <summary>
+               I’ve been wanting to write about psychology for a while now. However, despite having quite a few years of formal
+                education in it, I was unsure where to begin.
+            </summary>
+            <content type="application/xhtml+xml" src="https://amberwilson.co.uk/blog/house-elves/"/>
+        </entry>
+        <entry>
+            <title>Nobody Said CSS Is Easy</title>
+            <author>
+                    <name>Amber Wilson</name>
+            </author>
+            <link href="https://amberwilson.co.uk/blog/nobody-said-css-is-easy/"/>
+            <id>https://amberwilson.co.uk/blog/nobody-said-css-is-easy/</id>
+            <updated>2018-03-28T10:13:21Z</updated>
+            <summary>
+               For almost two months, I have been working on a complex React project involving a complex SCSS implementation. I am new to such complex projects, and so have only just begun to really learn about what SCSS can do. And... there is a _lot_ to learn. But, it is a beautiful mess.
+            </summary>
+            <content type="application/xhtml+xml" src="https://amberwilson.co.uk/blog/nobody-said-css-is-easy/"/>
+        </entry>
+         <entry>
+            <title>Books</title>
+            <author>
+                    <name>Amber Wilson</name>
+            </author>
+            <link href="https://amberwilson.co.uk/blog/books/"/>
+            <id>https://amberwilson.co.uk/blog/books/</id>
+            <updated>2018-03-23T11:14:56Z</updated>
+            <summary>
+               I am starting this post almost 4 months too late, but I want it here so I can be kept (at least a little) accountable for starting (and finishing!) as many books as I can. Here are the books I have read so far:
+            </summary>
+            <content type="application/xhtml+xml" src="https://amberwilson.co.uk/blog/books/"/>
+        </entry>
+        <entry>
+            <title>Beginner Programmer Advice - From me to you, and back to me</title>
+            <author>
+                    <name>Amber Wilson</name>
+            </author>
+            <link href="https://amberwilson.co.uk/blog/beginner-programmer-advice/"/>
+            <id>https://amberwilson.co.uk/blog/beginner-programmer-advice/</id>
+            <updated>2018-03-13T09:28:10Z</updated>
+            <summary>
+                I realised I published Newbie Dev Tips nearly seven months ago. I found it super interesting to reflect on my opinions then versus now :)
+            </summary>
+            <content type="application/xhtml+xml" src="https://amberwilson.co.uk/blog/beginner-programmer-advice/"/>
+        </entry>
+        <entry>
+            <title>Unit Tests</title>
+            <author>
+                    <name>Amber Wilson</name>
+            </author>
+            <link href="https://amberwilson.co.uk/blog/unit-tests/"/>
+            <id>https://amberwilson.co.uk/blog/unit-tests/</id>
+            <updated>2018-02-05T08:30:22Z</updated>
+            <summary>
+                This is a bit of a retrospective post, because the things I’m going to talk about happened on the last day of January. It was the day before my new job began, and I’d been in Berlin for 10 days. I had signed up to a codebar Berlin meetup about a week before, as a student, and was really excited to go along and see what codebar in Berlin was like. Before I moved to Berlin, I’d been part of codebar Brighton for about 1.5 years as a student, coach and organiser.
+            </summary>
+            <content type="application/xhtml+xml" src="https://amberwilson.co.uk/blog/unit-tests/"/>
+        </entry>
+        <entry>
+            <title>Inclusionary and Exclusionary Language</title>
+            <author>
+                    <name>Amber Wilson</name>
+            </author>
+            <link href="https://amberwilson.co.uk/blog/inclusionary-exclusionary-language/"/>
+            <id>https://amberwilson.co.uk/blog/inclusionary-exclusionary-language/</id>
+            <updated>2018-02-03T23:19:47Z</updated>
+            <summary>
+                Today I attended the Global Diversity CFP Day – Berlin style. There were 13 amazing mentors and over 20 students – all of us hosted by the awesome Stefan Judis and Irina Botea in the Contentful offices. The day was pre-planned for us by the great Peter Aitken. We watched inspiring educational videos, had discussions and completed exercises. The exercise which struck the biggest chord with the participants was the one on use of exclusionary language within public speaking, and how we can work to be much more inclusionary.
+            </summary>
+            <content type="application/xhtml+xml" src="https://amberwilson.co.uk/blog/inclusionary-exclusionary-language/"/>
+        </entry>
+        <entry>
+        <title>January, Journey, Job and Germs (& Self-Care)</title>
+        <author>
+                <name>Amber Wilson</name>
+        </author>
+        <link href="https://amberwilson.co.uk/blog/january-journey-job-and-germs-and-self-care/"/>
+        <id>https://amberwilson.co.uk/blog/january-journey-job-and-germs-and-self-care/</id>
+        <updated>2017-01-27T14:29:02Z</updated>
+        <summary>
+            This post details how my January has gone so far, my reflections on it, and has an important message at the end. This January is almost over! How many of you have achieved goals you set out for yourself? And if you didn’t have goals, do you feel you’ve accomplished something good in the first month of 2018?
+        </summary>
+        <content type="application/xhtml+xml" src="https://amberwilson.co.uk/blog/january-journey-job-and-germs-and-self-care/"/>
+    </entry>
+        <entry>
+        <title>What Am I Looking For?</title>
+        <author>
+                <name>Amber Wilson</name>
+        </author>
+        <link href="https://amberwilson.co.uk/blog/what-am-i-looking-for/"/>
+        <id>https://amberwilson.co.uk/blog/what-am-i-looking-for/</id>
+        <updated>2017-12-07T12:20:38Z</updated>
+        <summary>
+            Equally importantly - what are you looking for? What people want is important. And that’s never truer for web developers and for the people who employ them.
+        </summary>
+        <content type="application/xhtml+xml" src="https://amberwilson.co.uk/blog/what-am-i-looking-for/"/>
+    </entry>
+    <entry>
+        <title>Remembering Why</title>
+        <author>
+                <name>Amber Wilson</name>
+        </author>
+        <link href="https://amberwilson.co.uk/blog/remembering-why/"/>
+        <id>https://amberwilson.co.uk/blog/remembering-why/</id>
+        <updated>2017-12-07T19:03:33Z</updated>
+        <summary>
+            Your productivity is all about you. I don’t ever like to advocate for lists like “10 ways to boost your productivity today”. Productivity is personal. Everyone’s ideas about it are different. We all seek a definition of it, and when we find one that sounds sensible, we put precious energy into achieving it. However, if it’s someone else’s definition, there’s not a huge chance we will achieve it and this can leave us feeling bad.
+        </summary>
+        <content type="application/xhtml+xml" src="https://amberwilson.co.uk/blog/remembering-why/"/>
+    </entry>
+    <entry>
+        <title>Public Speaking - I Did It</title>
+        <author>
+            <name>Amber Wilson</name>
+        </author>
+        <link href="https://amberwilson.co.uk/blog/public-speaking-i-did-it/"/>
+        <id>https://amberwilson.co.uk/blog/public-speaking-i-did-it/</id>
+        <updated>2017-10-26T15:59:18Z</updated>
+        <summary>
+          A year ago, with years of psychology study and experience under my belt, I moved to Brighton to begin my path towards becoming a psychologist. Soon after,I tried out my first codebar meeting because I’ve always secretly been interested in Web development. 
+        </summary>
+        <content type="application/xhtml+xml" src="https://amberwilson.co.uk/blog/public-speaking-i-did-it/"/>
+   		</entry>
+      <entry>
+        <title>JPG? PNG? SVG?</title>
+        <author>
+            <name>Amber Wilson</name>
+        </author>
+        <link href="https://amberwilson.co.uk/blog/jpg-png-svg/"/>
+        <id>https://amberwilson.co.uk/blog/jpg-png-svg/</id>
+        <updated>2017-09-25T12:28:10Z</updated>
+        <summary>
+          There is a room that contains all there is to know about images. The door to it is locked. Most of us have casually peered through its keyhole or witnessed light of various colours and brightness spilling from it. If you are granted a guest pass to the room, beware. Akin to JK Rowling’s Triwizard Maze, you are likely to get lost in its twisting passages, or be usurped by something surprising along the way.
+        </summary>
+        <content type="application/xhtml+xml" src="https://amberwilson.co.uk/blog/jpg-png-svg/"/>
+    	</entry>
+      <entry>
+        <title>Nightlybuild 2017</title>
+        <author>
+            <name>Amber Wilson</name>
+        </author>
+        <link href="https://amberwilson.co.uk/blog/nightlybuild2017/"/>
+        <id>https://amberwilson.co.uk/blog/nightlybuild2017/</id>
+        <updated>2017-09-06T10:28:10Z</updated>
+        <summary>
+          Darkness. A good kind. The theatre dressed in purple and black hues. The theme colours. Quite empty at first, smattered with only a few people. Organisers, speakers and sponsors. Everyone calm and confident, or maybe hiding nerves well. Time moved fast. The seats, around 200, seemed to fill at the blink of an eye.
+        </summary>
+        <content type="application/xhtml+xml" src="https://amberwilson.co.uk/blog/nightlybuild2017/"/>
+    	</entry>
+      <entry>
+        <title>3 Months Vegan</title>
+        <author>
+            <name>Amber Wilson</name>
+        </author>
+        <link href="https://amberwilson.co.uk/blog/3-months-vegan/"/>
+        <id>https://amberwilson.co.uk/blog/3-months-vegan/</id>
+        <updated>2017-09-04T19:44:22Z</updated>
+        <summary>
+          I watched the documentary “What the Earth” three months ago and became vegan the very next day – totally cold turkey – no meat, no milk, no cheese, no eggs, no honey…
+        </summary>
+        <content type="application/xhtml+xml" src="https://amberwilson.co.uk/blog/3-months-vegan/"/>
+    </entry>
+      <entry>
+        <title>Newbie Dev Tips</title>
+        <author>
+            <name>Amber Wilson</name>
+        </author>
+        <link href="https://amberwilson.co.uk/blog/newbie-dev-tips/"/>
+        <id>https://amberwilson.co.uk/blog/newbie-dev-tips/</id>
+        <updated>2017-08-29T07:11:55Z</updated>
+        <summary>
+          I coached a new codebar student on HTML tonight. As she and I made our websites on owls, many tips for new developers popped into my head
+        </summary>
+        <content type="application/xhtml+xml" src="https://amberwilson.co.uk/blog/newbie-dev-tips/"/>
+    </entry>
+      <entry>
+        <title>Material Conference</title>
+        <author>
+            <name>Amber Wilson</name>
+        </author>
+        <link href="https://amberwilson.co.uk/blog/material-conference/"/>
+        <id>https://amberwilson.co.uk/blog/material-conference/</id>
+        <updated>2017-08-18T22:52:12Z</updated>
+        <summary>
+          Where do I start? The preconceptions I had about the experience were inaccurate. I thought it’d be an absolutely great day – a day full of learning about the Web, meeting cool people, and achieving my first big talk. Those things turned out to be included for sure. The thing is though... it was also so much more.
+        </summary>
+        <content type="application/xhtml+xml" src="https://amberwilson.co.uk/blog/material-conference/"/>
+    </entry>
+    <entry>
+        <title>Pictures, Psychology and Piano</title>
+        <author>
+            <name>Amber Wilson</name>
+        </author>
+        <link href="https://amberwilson.co.uk/blog/pictures-psychology-piano/"/>
+        <id>https://amberwilson.co.uk/blog/pictures-psychology-piano/</id>
+        <updated>2017-08-14T15:33:28Z</updated>
+        <summary>
+          Five days ago, I gave my first speech at Toastmasters - the first out of ten outlined in the official manual. It’s 4–6 minutes long and designed to be all about the speaker  — it’s called The Icebreaker. Due to being busy with a conference speech, I was only able to speed-write this 2 days before giving it. Nevertheless, thanks to the brilliant people who'd helped me practice my larger speech, I delivered this one fantastically!
+        </summary>
+        <content type="application/xhtml+xml" src="https://amberwilson.co.uk/blog/pictures-psychology-piano/"/>
+    </entry>
+    <entry>
+        <title>Learning</title>
+        <author>
+            <name>Amber Wilson</name>
+        </author>
+        <link href="https://amberwilson.co.uk/blog/learning/"/>
+        <id>https://amberwilson.co.uk/blog/learning/</id>
+        <updated>2017-07-03T11:34:22Z</updated>
+        <summary>
+          I discover ideas every day by talking to people, listening to them, reading, writing, attending events, going to meetups, sharing ideas, pushing myself out of my comfort zone.
+        </summary>
+        <content type="application/xhtml+xml" src="https://amberwilson.co.uk/blog/learning/"/>
+    </entry>
+    <entry>
+        <title>What I Learned Today</title>
+        <author>
+            <name>Amber Wilson</name>
+        </author>
+        <link href="https://amberwilson.co.uk/blog/wilt22june/"/>
+        <id>https://amberwilson.co.uk/blog/wilt22june/</id>
+        <updated>2017-06-22T12:56:38Z</updated>
+        <summary>
+          Today I sat with Russell Ward, technical director at The Unit. We talked about how I can get involved in the development team as part of my internship. This quickly turned into a discussion about programming languages and the Web.
+        </summary>
+        <content type="application/xhtml+xml" src="https://amberwilson.co.uk/blog/wilt22june/"/>
+    </entry>
+    <entry>
+        <title>Public Speaking Workshop</title>
+        <author>
+            <name>Amber Wilson</name>
+        </author>
+        <link href="https://amberwilson.co.uk/blog/publicspeakingworkshop/"/>
+        <id>https://amberwilson.co.uk/blog/publicspeakingworkshop/</id>
+        <updated>2017-06-15T08:22:34Z</updated>
+        <summary>
+          Earlier this week I attended a public speaking workshop run by Matt Matheson. There were ten people in the group. We wrote stories. We played games. We presented. One hour in we had already talked in front of everyone four times. The lovely thing is – everyone did really well. We were all praised and given immediate feedback and I learned something new each time I spoke.
+        </summary>
+        <content type="application/xhtml+xml" src="https://amberwilson.co.uk/blog/publicspeakingworkshop/"/>
+    </entry>
+    <entry>
+        <title>URLs</title>
+        <author>
+            <name>Amber Wilson</name>
+        </author>
+        <link href="https://amberwilson.co.uk/blog/urls/"/>
+        <id>https://amberwilson.co.uk/blog/urls/</id>
+        <updated>2017-06-07T14:18:13Z</updated>
+        <summary>
+          URLs have stood the test of time on the Web, providing us from the very beginning with an unmanned gateway to information, ability to share things, and to search (where would we be today without our trusty search engines?)
+        </summary>
+        <content type="application/xhtml+xml" src="https://amberwilson.co.uk/blog/urls/"/>
+    </entry>
+    <entry>
+        <title>IndieWebCamp</title>
+        <author>
+            <name>Amber Wilson</name>
+        </author>
+        <link href="https://amberwilson.co.uk/blog/indiewebcamp/"/>
+        <id>https://amberwilson.co.uk/blog/indiewebcamp/</id>
+        <updated>2017-05-23T10:54:11Z</updated>
+        <summary>
+          The IndieWebCamp was split into two parts. On Saturday we gained inspiration from discussing different topics suggested by camp attendees. On Sunday we harnessed this inspiration and, alone or in groups, we got to work.
+        </summary>
+        <content type="application/xhtml+xml" src="https://amberwilson.co.uk/blog/indiewebcamp/"/>
+    </entry>
     <entry>
         <title>Mobile First</title>
         <author>
@@ -186,8 +526,7 @@
         <id>https://amberwilson.co.uk/blog/mentorship/</id>
         <updated>2017-03-06T17:58:03Z</updated>
         <summary>
-            It was around October last year when I arrived at 68 Middle Street for a codebar session. It was the first time I had been in the building and I was immediately struck by how spaceous and well-designed it was. Even if I wasn't entirely sure what
-            people did there.
+            It was around October last year when I arrived at 68 Middle Street for a codebar session. It was the first time I had been in the building and I was immediately struck by how spaceous and well-designed it was. Even if I wasn't entirely sure what people did there.
         </summary>
         <content type="application/xhtml+xml" src="https://amberwilson.co.uk/blog/mentorship/"/>
     </entry>

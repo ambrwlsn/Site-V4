@@ -1,0 +1,60 @@
+body {
+    background: #e2e1e0;
+    text-align: center;
+}
+
+.card {
+    font-family: Verdana, sans-serif;
+    background: #fff;
+    border-radius: 2px;
+    display: inline-block;
+    height: 200px;
+    margin-top: 1rem;
+    width: 500px;
+    text-align: left;
+    position: relative;
+}
+
+h1 {
+  font-family: Verdana, sans-serif;
+  margin-top: 2em;
+  font-size: 1.1em;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    flex-flow: row wrap;
+    height: auto;
+    margin: 1.5rem auto 0 auto;
+    width: 450px;
+    font-size: .9em;
+}
+
+.box {
+    position: absolute;
+    bottom: 0;
+    height: 90px;
+    width: 500px;
+    display: flex;
+  }
+
+.mini--box {
+    flex: 1;
+    min-height: 90px;
+}
+
+.end {
+  margin-top: auto;
+  justify-content: flex-end;
+}
+
+.big-number {
+    font-size: 1.05em;
+    font-weight: bold;
+}
+
+.card-1 {
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
+}

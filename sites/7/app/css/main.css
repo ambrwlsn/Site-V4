@@ -1,0 +1,114 @@
+@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro");
+@import url("https://fonts.googleapis.com/css?family=Roboto:500");
+@import url("https://fonts.googleapis.com/css?family=Quicksand");
+* {
+  box-sizing: border-box; }
+
+body {
+  font-family: "Quicksand", sans-serif;
+  font-weight: 400;
+  margin: 0;
+  background-color: #ccc; }
+
+body::after {
+  content: "Hello, Bonjour, Bom Dia";
+  width: 35vw;
+  height: 100%;
+  font-size: 1.7em;
+  color: white;
+  background: #6B76AC;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: -1;
+  margin: 0; }
+
+.logo-image {
+  z-index: 2;
+  position: absolute; }
+
+h1 {
+  margin-top: 0.5em;
+  color: white; }
+
+.right {
+  height: 90px;
+  width: 45px; }
+
+.right {
+  border-radius: 0 90px 90px 0; }
+
+.main-navigation {
+  height: 150px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+
+.main-text {
+  margin-top: 0;
+  margin-left: 1.5rem;
+  width: 48%;
+  top: 0;
+  right: 5px;
+  font-family: "Quicksand", sans-serif;
+  font-weight: 600; }
+
+ul > li {
+  display: inline-block;
+  list-style-type: none;
+  padding-right: 5em; }
+
+ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  list-style: none; }
+
+section {
+  text-align: center;
+  line-height: 3em;
+  margin-bottom: 2em; }
+
+@media only screen and (min-width: 800px) {
+  .focal-point {
+    background-color: #4f944f;
+    height: 100vh;
+    width: 50vw;
+    border-top-left-radius: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: -1; }
+  body::after {
+    display: none; }
+  .main-text {
+    margin-left: 1.5rem;
+    width: 48%;
+    padding: 10px;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    font-family: "Quicksand", sans-serif;
+    font-weight: 600; }
+  .title-text {
+    position: absolute;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    top: 13rem;
+    right: 9rem;
+    font-size: 1.5em;
+    font-family: "Quicksand", sans-serif; }
+  .logo-image {
+    z-index: 2;
+    position: absolute;
+    top: 50px;
+    left: 40px; } }

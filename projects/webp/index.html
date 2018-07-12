@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="author" content="Amber Wilson" />
+    <meta name="publisher" content="Amber Wilson" />
+    <meta name="copyright" content="Amber Wilson" />
+    <meta name="description" content="One month ago, I was invited by Michele and Vanessa to speak at the JSConf EU community lounge in sunny Berlin. This was a tremendous honour - not only would I be able to talk about how great codebar is to a crowd of eager attendees, but I'd be able to participate in both CSS and JSConf EU, and catch up with lots of old and new friends."
+    />
+    <meta name="keywords" content="amber wilson,javascript,software engineering,web development, coding" />
+    <meta name="viewport" content="width=device-width; initial-scale=1.0;" />
+    <title>JSConf EU: Community Lounge</title>
+    <meta name="robots" content="index,follow" />
+    <link rel="canonical" href="https://amberwilson.co.uk/blog/jsconfeu-community-lounge/" />
+    <link rel="shortcut icon" href="/img/favicon-16x16.png" />
+    <meta name="DC.Title" content="JSConf EU: Community Lounge" />
+    <meta name="DC.Creator" content="Amber Wilson" />
+    <meta name="DC.Rights" content="Amber Wilson" />
+    <meta name="DC.Publisher" content="Amber Wilson" />
+    <meta name="DC.Description" content="One month ago, I was invited by Michele and Vanessa to speak at the JSConf EU community lounge in sunny Berlin. This was a tremendous honour - not only would I be able to talk about how great codebar is to a crowd of eager attendees, but I'd be able to participate in both CSS and JSConf EU, and catch up with lots of old and new friends."
+    />
+    <meta property="og:title" content="JSConf EU: Community Lounge | Amber Wilson">
+    <meta property="og:type" content="website" />
+    <meta property="og:description" content="Around one month ago, I was invited by Michele and Vanessa to speak at the JSConf EU community lounge in sunny Berlin. This was a tremendous honour - not only would I be able to talk about how great codebar is to a crowd of eager attendees, but I'd be able to participate in both CSS and JSConf EU, and catch up with lots of old and new friends.">
+    <meta property="og:image" content="/workspace.jpg/">
+    <meta property="og:url" content="https://amberwilson.co.uk/blog/jsconfeu-community-lounge/">
+
+    <meta itemprop="name" content="JSConf EU: Community Lounge | Amber Wilson">
+    <meta itemprop="description" content="">
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:image" property="og:image" content="/img/me_400x400.jpg" />
+    <meta name="twitter:site" content="@ambrwlsn90" />
+    <meta name="twitter:site:id" content="790735158" />
+    <meta name="twitter:creator" content="@ambrwlsn90" />
+    <meta name="twitter:creator:id" content="790735158" />
+    <meta name="twitter:url" property="og:url" content="https://amberwilson.co.uk/" />
+    <meta name="twitter:title" property="og:title" content="Amber Wilson" />
+    <meta name="twitter:description" property="og:description" content="Amber Wilson's personal website full of blog posts and learnings."
+    />
+    <script type="application/ld+json">
+        {
+            "@context": "http://schema.org",
+            "@type": "BlogPosting",
+            "headline": "WebP",
+            "keywords": "amber wilson,progressive enhancement,software engineering,web development, coding, images, webp",
+            "url": "https://amberwilson.co.uk/projects/webp/",
+            "datePublished": "2018-06-11T08:37:11Z",
+            "dateCreated": 2018 - 06 - 11 T08: 37: 11 Z ",
+            "dateModified": "2018-06-11T08:37:11Z",
+
+            "image": {
+                "@type": "ImageObject",
+                "url": "https://amberwilson.co.uk/img/workspace.jpg",
+                "height": 686,
+                "width": 1150
+            },
+            "editor": {
+                "@type": "Person",
+                "name": "Amber Wilson",
+                "url": "https://amberwilson.co.uk"
+            },
+            "publisher": {
+                "@type": "Person",
+                "name": "Amber Wilson",
+                "url": "https://amberwilson.co.uk"
+            },
+            "author": {
+                "@type": "Person",
+                "name": "Amber Wilson",
+                "url": "https://amberwilson.co.uk"
+            }
+        }
+    </script>
+    <link rel="me" href="mailto:ambrwlsn90@gmail.com" />
+    <link rel="stylesheet" href="/css/stylesheet.css">
+</head>
+
+
+
+<body>
+    <header>
+
+        <nav>
+            <ol>
+                <li><a href="/" title="Home">Home</a></li>
+                <li><a href="/blog/" title="Blog">Blog</a></li>
+                <li><a href="/projects/" title="Portfolio">Projects</a></li>
+            </ol>
+        </nav>
+    </header>
+
+    <section class="h-entry">
+        <h1 class="p-name">WebP Images</h1>
+        <time datetime="2018-11-06" class="dt-published">11th June 2018</time>
+        <div class="e-content">
+            <p>
+                <picture>
+                    <source srcset="img/pier_small.webp" type="image/webp">
+                    <img src="img/pier_small.jpg" alt="Brighton pier in the sun">
+                </picture>
+            </p>
+
+            <p>Hi, I am Brighton Pier. 👋
+                <div>This image of me is 168kb in JPG form and 36KB in WebP form (that's a 78% saving in size). See where you
+                    can use WebP <a href="https://caniuse.com/#search=webp">here</a>. So far support isn't great, but it
+                    is set to get better. In Chrome, my image loaded and was 34.9kb, and in other browsers my fallback JPG
+                    was 164kb. The fallback image was made possible by the <code> &lt;picture&gt;</code> and <code> &lt;source&gt;</code>                    elements, shown below:</div>
+            </p>
+            <p>
+                <pre><code>&lt;picture&gt;
+    &lt;source srcset=&quot;img/pier_small.webp&quot; type=&quot;image/webp&quot;&gt;
+    &lt;img src=&quot;img/pier_small.jpg&quot; alt=&quot;Brighton pier in the sun&quot;&gt;
+&lt;/picture&gt;</code></pre>
+            </p>
+            <p>If browsers do not support the <code> &lt;picture&gt;</code> element, they will still be able to use the fallback
+                image.
+            </p>
+            <!-- <p>What if you want to display the image using CSS? This is a little trickier.</p>
+                <p>To do this, use the <code>&lt;noscript&gt;</code> element.</p> -->
+        </div>
+    </section>
+    <footer>
+        <small> © 2018 <a class="p-author h-card" href="https://amberwilson.co.uk/">Amber Wilson</a>.</small>
+    </footer>
+
+    <script type="text/javascript" src="/js/script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,425 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:500");
+@import url("https://fonts.googleapis.com/css?family=Quattrocento");
+/**
+  * Start of site-wide styles
+  */
+
+* {
+  -webkit-font-smoothing: antialiased;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  min-height: 100%;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 24px;
+  line-height: 1.2;
+  padding: 20px 30px 36px;
+  margin: 0 2.5%;
+  max-width: 100em;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+section,
+article,
+header,
+footer,
+nav,
+aside,
+hgroup {
+  display: block;
+}
+
+/**
+    * 1. This has to match the padding of 
+    *    the content section above.
+    * 2. This has to match the padding of
+    *    the homepage.
+    */
+
+footer {
+  /* 1. */
+  margin: auto auto 0px 0;
+  padding: 0px;
+}
+
+.homepage__footer {
+  /* 2. */
+  margin: auto auto 0px 0;
+  padding: 0;
+}
+
+img {
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: #e65954;
+  cursor: pointer;
+}
+
+nav {
+  background-color: inherit;
+  color: rgba(255, 255, 255, 0.95);
+  font-size: 0.95em;
+}
+
+nav ol {
+  display: flex;
+  justify-content: flex-end;
+  list-style: none;
+}
+
+nav a {
+  display: block;
+  padding: 0.25rem 0.25rem 0;
+  margin-left: 1em;
+  color: #3a343a;
+  text-decoration: none;
+  border-bottom-width: 0.25em;
+  border-bottom-style: solid;
+  border-bottom-color: transparent;
+}
+
+/**
+  * End of site-wide styles
+  */
+
+/**
+  * Start of homepage styles
+  */
+
+.homepage__background {
+  background: linear-gradient(135deg, #fff 60%, #8bedc6 60%);
+}
+
+.homepage__title {
+  font-size: 2.3em;
+  color: #3a343a;
+  line-height: 1em;
+}
+
+.likes-svg,
+.media-svg {
+  width: 8%;
+  height: auto;
+}
+
+.media-svg {
+  margin-right: 0.9em;
+}
+
+.likes-svg:hover {
+  animation: pulse 1.5s;
+  animation: pulse 1s forwards;
+  -webkit-animation: pulse 1s forwards;
+}
+
+@keyframes pulse {
+  0% {
+    background-color: white;
+  }
+  100% {
+    background-color: #e65954;
+  }
+}
+
+/**
+  * End of homepage styles
+  */
+
+/**
+  * Start of general blog styles
+  */
+
+.blog__list {
+  font-size: 1.2em;
+  font-weight: 600;
+}
+
+.e-content,
+.p-name {
+  font-family: "Quattrocento", sans-serif;
+  line-height: 1.5em;
+}
+
+.e-content {
+  font-size: 0.9em;
+}
+
+/**
+  * End of general blog styles
+  */
+
+code {
+  font-weight: 900;
+}
+
+pre code {
+  font-size: 0.7em;
+  font-weight: 500;
+}
+
+.rounded-image--center {
+  border-radius: 50%;
+  text-align: center;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.m-t-m {
+  margin-top: 2em;
+}
+
+.underline {
+  text-decoration: underline;
+}
+
+figure {
+  display: inline-block;
+}
+
+figure img {
+  border: 1px #000 solid;
+}
+
+figure img:hover {
+  outline: 3px #000 solid;
+}
+
+figcaption {
+  font-size: 1.2rem;
+}
+
+.long__item--margin-bottom li {
+  margin-bottom: 1em;
+}
+
+.image--smaller img {
+  width: 95%;
+  height: auto;
+  display: inline-block;
+  padding-bottom: 0.5em;
+}
+
+.image--border img {
+  margin: 0 auto;
+  border: 1px solid black;
+}
+
+.svg__image--size {
+  margin: 0 auto;
+  width: 20vw;
+  height: auto;
+  display: block;
+}
+
+/**
+  * Start of word page styles
+  */
+
+.bubble {
+  position: relative;
+  line-height: 1.2em;
+  font-size: 0.8em;
+  padding: 15px;
+  margin: 1em 0 3em;
+  border: 5px solid #2f4f4f;
+  color: #333;
+  background: #fff;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+}
+
+.bubble:before {
+  font-size: 0.8em;
+  content: "";
+  position: absolute;
+  bottom: -20px;
+  left: 40px;
+  border-width: 20px 20px 0;
+  border-style: solid;
+  border-color: #2f4f4f transparent;
+  display: block;
+  width: 0;
+}
+
+.bubble:after {
+  content: "";
+  position: absolute;
+  bottom: -13px;
+  left: 47px;
+  border-width: 13px 13px 0;
+  border-style: solid;
+  border-color: #fff transparent;
+  display: block;
+  width: 0;
+}
+
+.bubbley {
+  font-size: 0.8em;
+  position: relative;
+  line-height: 1.2em;
+  padding: 15px;
+  margin: 1em 0 3em;
+  border: 5px solid #2f4f4f;
+  color: #333;
+  background: #fff;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+}
+
+.bubbley:before {
+  content: "";
+  position: absolute;
+  bottom: -20px;
+  right: 40px;
+  border-width: 20px 20px 0;
+  border-style: solid;
+  border-color: #2f4f4f transparent;
+  display: block;
+  width: 0;
+}
+
+.bubbley:after {
+  content: "";
+  position: absolute;
+  bottom: -13px;
+  right: 47px;
+  border-width: 13px 13px 0;
+  border-style: solid;
+  border-color: #fff transparent;
+  display: block;
+  width: 0;
+}
+
+.words-container {
+  font: 1em/1.4 Cambria, Georgia, sans-serif;
+  color: #333;
+  max-width: 500px;
+  padding: 0 0 50px;
+  margin: 0 auto;
+}
+
+.words-container h3 {
+  font-size: 1.2em;
+  font-family: "Roboto", sans-serif;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 0.5em;
+  text-align: center;
+}
+
+/**
+  * End of word page styles
+  */
+
+/* **** <<<< !!!! BEGINNING OF DESKTOP STYLES !!!! >>>> **** */
+
+@media only screen and (min-width: 520px) {
+  body,
+  section {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0;
+  }
+  body {
+    padding: 20px 36px 36px;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+  nav {
+    font-size: 1em;
+  }
+  nav ol {
+    flex-wrap: wrap;
+  }
+  .homepage__title {
+    color: #3a343a;
+    line-height: 1em;
+  }
+  .svg__image--size {
+    margin: 0 auto;
+    width: 10vw;
+    height: auto;
+    display: block;
+  }
+  .likes-svg,
+  .media-svg {
+    width: 4%;
+    height: auto;
+  }
+  .image--smaller img {
+    max-width: 45%;
+    height: auto;
+    display: inline-block;
+    padding-bottom: 0.5em;
+  }
+  .image--border img {
+    max-width: 500px;
+  }
+  .h-entry {
+    padding: 0 2.8em;
+  }
+  /**
+    * 1. This has to match the padding of 
+    *    the content section above.
+    * 2. This has to match the padding of
+    *    the homepage.
+    */
+  footer {
+    /* 1. */
+    margin: auto auto 0px 0;
+    padding: 0 2.8em;
+  }
+  .homepage__footer {
+    /* 2. */
+    margin: auto auto 0px 0;
+    padding: 0;
+  }
+}
+
+/*Words Bubble Layout*/
+
+@media screen and (min-width: 520px) {
+  .words-container {
+    font-size: 0.1em;
+    width: 90%;
+    text-align: center;
+    font: 1em/1 Cambria, Georgia, sans-serif;
+    line-height: 1.2em;
+    margin-top: 1em;
+  }
+}
+
+@media only screen and (min-width: 1800px) {
+  body {
+    margin: 4vw;
+    font-size: 1.5em;
+  }
+  .homepage__section {
+    margin: 8vw;
+    font-size: 1.5em;
+  }
+  /**
+    * 1. This has to match the margin of 
+    *    the content section above.
+    */
+  footer {
+    /* 1. */
+    margin: auto auto 0px 0;
+    margin: 0 8vw;
+  }
+}

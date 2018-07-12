@@ -1,0 +1,245 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="author" content="Amber Wilson" />
+    <meta name="description" content="By Amber Wilson" />
+    <title>Amber Wilson</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta property="og:title" content="Unit Tests">
+    <meta property="og:description" content="When I arrived at codebar, I found the venue, hosts, organiser, coaches and students to be really wonderful. I was paired with a lovely guy,Dave. I asked him about unit tests and he said rather than follow the tutorial, it'd be a nice idea to search through one of my existing projects, take a snippet of code from it, and re-write it using unit tests and TDD (Test-Driven Development). I've written more about TDD below.">
+    <meta property="og:image" content="">
+    <meta property="og:url" content="https://amberwilson.co.uk/blog/unit-tests/">
+    <meta name="twitter:card" content="">
+    <meta name="twitter:site" content="">
+    <meta name="twitter:creator" content="@ambrwlsn90">
+    <meta name="twitter:title" property="og:title" content="">
+    <meta name="twitter:description" property="og:description" content="">
+    <meta name="twitter:url" property="og:url" content="">
+    <meta name="twitter:image" property="og:image" content="">
+    <link rel="stylesheet" href="/css/stylesheet.css">
+
+</head>
+
+
+<body>
+    <header>
+
+        <nav>
+            <ol>
+                <li>
+                    <a href="/" title="Home">Home</a>
+                </li>
+                <li>
+                    <a href="/blog/" title="Blog">Blog</a>
+                </li>
+                <li>
+                    <a href="/projects/" title="Portfolio">Projects</a>
+                </li>
+            </ol>
+        </nav>
+    </header>
+
+    <section class="h-entry">
+        <h1 class="p-name">Unit Tests</h1>
+        <time datetime="2018-02-05" class="dt-published">Monday 5th February</time>
+        <div class="e-content">
+            <p>This is a bit of a retrospective post, because the things I’m going to talk about happened on the last day of
+                January. It was the day before my new job began, and I’d been in Berlin for 10 days. I had signed up to a
+                codebar Berlin meetup about a week before, as a student, and was really excited to go along and see what
+                codebar in Berlin was like. Before I moved to Berlin, I’d been part of codebar Brighton for about 1.5 years
+                as a student, coach and organiser.</p>
+
+            <p>I had chosen to focus on the 7th JavaScript lesson –
+                <a href="http://tutorials.codebar.io/js/lesson7/tutorial.html">Introduction to Testing</a>. There was a good
+                reason for this! After my first 6-month long internship as a web developer, I had either worked on or had
+                an overview of a few large projects. I'd seen every developer devote a really large chunk of time to testing
+                their code - and in multiple different ways. So I knew that <strong>testing is really, really important</strong>,
+                and I definitely wanted to know more about it. I knew that unit tests are designed specifically to test code
+                in isolation, and that they are the simplest ones to write and run. So, I decided I wanted to ask my coach
+                about unit tests, and hopefully try writing some.</p>
+
+            <p>When I arrived at codebar, I found the venue, hosts, organiser, coaches and students to be really wonderful.
+                I was paired with a lovely guy,
+                <a href="https://twitter.com/bruderstein">Dave</a>. I asked him about unit tests and he said rather than
+                follow the tutorial, it'd be a nice idea to search through one of my
+                <a href="https://github.com/ambrwlsn/christmas-gifts">existing projects</a>, take a snippet of code from
+                it, and re-write it using unit tests and TDD (Test-Driven Development). I've written more about TDD below.</p>
+
+            <p>The code in question was this function:</p>
+
+            <pre><code>
+function validatePrice() {
+    var $price = document.getElementById('price');
+    var priceValue = $price.value;
+    var regex = /^[1-9]\d*(((,\d{3}){1})?(\.\d{0,2})?)$/;
+    var invalidMessageNotDisplayed = document.querySelectorAll('.invalid_price_span').length &lt;= 0;
+    var isValid = regex.test(priceValue);
+    if (!isValid &amp;&amp; invalidMessageNotDisplayed) {
+        showInvalidPriceMessage($price);
+    }
+    return isValid;
+}
+</code></pre>
+
+            <p>This function is designed to validate user-inputted prices. It isn’t the messiest function ever, but there is
+                definitely room for re-factoring.</p>
+
+            <p>Dave suggested we use the popular testing framework <a href="https://facebook.github.io/jest/">Jest</a>, and
+                the command line, to help me re-write the function, and write my first ever unit tests.
+            </p>
+
+            <p>I created a new folder with the command line
+                <code>mkdir price</code>, I targeted the folder
+                <code>cd price</code>, and ran
+                <code>npm init</code>. My <code>package.json</code> data was created. I then ran
+                <code>npm install --save jest</code>. My <code>package.json</code> then looked like this:</p>
+            <pre><code>
+{
+    "name": "price",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "test": "jest"
+    },
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "jest": "^22.1.4"
+    }
+} 
+</code></pre>
+
+
+            <p>I opened my text editor and added my new price folder to my workspace. Within the folder, I created a file -
+                <code>validate_price.js</code>. In here, I created an empty function -
+                <code>validate_price</code>. Beneath the function, I made sure to add a line of code that enables the file
+                contents to be exported -
+                <code>module.exports = validate_price</code>. I then created a sub-folder -
+                <code>__tests__</code>. I formatted the name like this so Jest can recognise it. In this sub-folder, I created
+                a file -
+                <code>validate_price.spec.js</code>, which Jest can also recognise. In this file, I wrote -
+                <code>var validate_price = require (‘../validate_price’)</code>, to link it with my
+                <code>validate_price</code> function. </p>
+
+            <p>Dave then showed me the syntax for writing unit tests with Jest:</p>
+            <p>
+                <pre><code>
+describe('validate_price', function (){
+    it('accepts numbers without decimals', function(){
+        var result = validate_price('45');
+        expect(result).toBe(true);
+    })
+});
+</code></pre>
+            </p>
+            <p>I had just written my first ever unit test! I ran
+                <code>npm test</code> in the command line, triggering Jest to run. The result was:</p>
+
+            <p>
+                <img src="img/test_one.png" alt="unsuccessful unit test">
+            </p>
+
+            <p>The result helpfully informed me that my
+                <code>validate_price</code> function was still empty (i.e. not defined). I then wrote just two words inside
+                my function, ‘return false’. I ran
+                <code>npm test</code> again. I got another failed test. This is because the expected value (boolean) had
+                been ‘true’, and it had received the boolean ‘false’. When I changed the boolean to ‘true’, the test passed!
+            </p>
+
+            <p>
+                <img src="img/test_two.png" alt="successful unit test">
+            </p>
+
+            <p>I then added a second unit test to my
+                <code>validate_price.spec.js</code> file:
+            </p>
+            <p>
+                <pre> <code>
+it('declines values with non-digits', function(){
+    var result = validate_price('foo');
+    expect(result).toBe(false);
+})    
+</code></pre>
+            </p>
+            <p>What do you think would happen if
+                <code>npm test</code> was run now? You may or may not have guessed correctly, but we get this:
+            </p>
+            <p>
+                <img src="img/test_three.png" alt="unsuccessful unit test">
+            </p>
+
+
+
+            <p>This is because we have ‘true’ written in our function, and the expected result of this test is ‘false’. So our
+                first unit test passes, and our second one fails. This is easily fixed by creating an ‘if, else’ statement
+                that returns true or false, depending on whether the input is a number or not.</p>
+
+            <p>It was at this point that Dave began to further explain what Test Driven Development (TDD) is. This is an agile
+                method whereby an empty function is written, and each part of the function is written just well enough so
+                it passes a test written specifically for it, and is then refactored. This helps code to be as DRY and readable
+                as possible. Read more about TDD
+                <a href="https://www.agilealliance.org/glossary/tdd/#q=~(filters~(postType~(~'page~'post~'aa_book~'aa_event_session~'aa_experience_report~'aa_glossary~'aa_research_paper~'aa_video)~tags~(~'tdd))~searchTerm~'~sort~false~sortDirection~'asc~page~1)">here</a>.</p>
+
+            <p>Dave also told me about red, green, refactor (RFR). Uncle Bob does an amazing job of describing this
+                <a href="http://blog.cleancoder.com/uncle-bob/2014/12/17/TheCyclesOfTDD.html">here</a>.
+                <blockquote cite="http://blog.cleancoder.com/uncle-bob/2014/12/17/TheCyclesOfTDD.html">“the RGR cycle tells us to first focus on making the software work correctly; and then, and only then, to
+                    focus on giving that working software a long-term survivable structure.”</blockquote>
+            </p>
+
+            <p>In other words, write a unit test for a specific bit of code before you even write that code so that the test
+                initially fails (red), write code that makes the test pass (green), then refactor the code to be readable,
+                DRY, maintainable, and built for the future.</p>
+
+            <p> I had unknowingly already been doing this. I had written my first unit test before writing the code that it was
+                meant to test. The test failed (red). I then wrote code, any code, that would make the test pass (i.e. 'return
+                true'). The test passed (green). I then re-wrote the code so that it’d make sense to other developers. The
+                code was refactored (refactor).
+            </p>
+
+            <p>Next, Dave and I talked about my next task - how I could write code that would allow both unit tests to pass,
+                without having to use an 'if, else' statement. We decided to use a regular expression. Dave helped me write
+                the regular expression from scratch, which we tested using this
+                <a href="https://regex101.com/">cool site</a> that I had never heard of. In the end, we came up with this,
+                which looks pretty nice if I say so myself:</p>
+
+            <p>
+                <pre><code>   
+function validate_price(price) {
+    var regex = /^[0-9]+$/;
+    var result = regex.test(price)
+    return result;
+}
+
+module.exports = validate_price
+</code></pre>
+            </p>
+
+            <p>A few minutes before codebar wrapped up for the evening, I wanted to ask Dave the difference between unit tests
+                and a few other testing methods I have been exposed to as a new developer - integration tests, end-to-end
+                tests and browser testing. He answered my question by drawing out the "testing pyramid" for me. This is explained
+                really well <a href="http://www.agilenutshell.com/episodes/41-testing-pyramid">here</a> (there's also a video).
+                Basically, at the bottom there are unit tests, above there are integration tests, and at the top there are
+                user interface/end-to-end tests. The other kinds of testing (other than unit testing) are beyond the scope
+                of this post, but I plan to write about them later!</p>
+
+            <p>Overall, I had a great time learning about Jest, unit tests, testing in general and using regular expressions.
+                I love how unit tests allow developers to write really nice code that is more likely to be understood by
+                other developers.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <footer>
+        <small> © 2018
+                <a class="p-author h-card" href="https://amberwilson.co.uk/">Amber Wilson</a>.</small>
+    </footer>
+    <script type="text/javascript" src="/js/script.js"></script>
+</body>
+
+</html>

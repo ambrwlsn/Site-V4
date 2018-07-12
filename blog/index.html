@@ -2,286 +2,409 @@
 <html lang="en">
 
 <head>
-    <meta charset="utf-8">
-    <meta name="author" content="Amber Wilson" />
-    <meta name="description" content="By Amber Wilson" />
-    <title>Amber's Blog</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="twitter:card" content="">
-    <meta name="twitter:site" content="@ambrwlsn90">
-    <meta name="twitter:creator" content="@ambrwlsn90">
-    <meta name="twitter:title" property="og:title" content="Amber Wilson">
-    <meta name="twitter:description" property="og:description" content="Since I was little, I've been fascinated by nature and design. Stick me in a pretty spot outdoors and I will be content for hours appreciating the designs nature has to offer.">
-    <meta name="twitter:url" property="og:url" content="https://amberwilson.co.uk">
-    <meta name="twitter:image" property="og:image" content="">
-    <link rel="stylesheet" href="/css/style.css">
-    <link rel="alternate" type="application/rss+xml" href="https://amberwilson.co.uk/blog/amber.atom" />
+  <meta charset="utf-8">
+  <meta name="author" content="Amber Wilson" />
+  <meta name="description" content="By Amber Wilson" />
+  <title>Amber's Blog</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="twitter:card" content="">
+  <meta name="twitter:site" content="@ambrwlsn90">
+  <meta name="twitter:creator" content="@ambrwlsn90">
+  <meta name="twitter:title" property="og:title" content="Amber Wilson">
+  <meta name="twitter:description" property="og:description" content="Since I was little, I've been fascinated by nature and design. Stick me in a pretty spot outdoors and I will be content for hours appreciating the designs nature has to offer.">
+  <meta name="twitter:url" property="og:url" content="https://amberwilson.co.uk/blog/">
+  <meta name="twitter:image" property="og:image" content="">
+  <link rel="stylesheet" href="/css/stylesheet.css">
+  <link rel="alternate" type="application/rss+xml" href="https://amberwilson.co.uk/blog/amber.atom" />
 
-    <script>
-    // this is 'show more, show less'
-
-    $(document).ready(function() {
-        // Configure/customize these variables.
-        var showChar = 400; // How many characters are shown by default
-        var ellipsestext = "...";
-        var moretext = "Show more >";
-        var lesstext = "Show less";
-
-
-        $('.more').each(function() {
-            var content = $(this).html();
-
-            if (content.length > showChar) {
-
-                var c = content.substr(0, showChar);
-                var h = content.substr(showChar, content.length - showChar);
-
-                var html = c + '<span class="moreellipses">' + ellipsestext + '&nbsp;</span><span class="morecontent"><span>' + h + '</span>&nbsp;&nbsp;<a href="" class="morelink">' + moretext + '</a></span>';
-
-                $(this).html(html);
-            }
-
-        });
-
-        $(".morelink").click(function() {
-            if ($(this).hasClass("less")) {
-                $(this).removeClass("less");
-                $(this).html(moretext);
-            } else {
-                $(this).addClass("less");
-                $(this).html(lesstext);
-            }
-            $(this).parent().prev().toggle();
-            $(this).prev().toggle();
-            return false;
-        });
-    });
-    </script>
 </head>
 
 <body>
-    <header>
+  <header>
 
-        <nav>
-            <ol>
-                <li><a href="/" title="Home">Home</a></li>
-                <li><a href="/blog/" title="Blog">Blog</a></li>
-                <li><a href="/projects/" title="Portfolio">Projects</a></li>
-            </ol>
-        </nav>
-    </header>
+    <nav>
+      <ol>
+        <li><a href="/" title="Home">Home</a></li>
+        <li><a href="/blog/" title="Blog">Blog</a></li>
+        <li><a href="/projects/" title="Portfolio">Projects</a></li>
+      </ol>
+    </nav>
+  </header>
+  <form method="get" action="https://search.cweiske.de/">
+    <input type="hidden" name="site" value="amberwilson.co.uk/blog" />
+    <input type="text" name="q" placeholder="Search..." /><input type="submit" value="Search" />
+  </form>
 
-    <h1>UX Project</h1>
-    <h2>+ front-end development</h2>
-    <div>
+  <div>
+    <p>Subscribe<a title="Articles RSS feed" target="_blank" href="amber.atom"> here!</a>
+  </div>
 
-
-        <section>
-          <form method="get" action="https://search.cweiske.de/">
-     <input type="hidden" name="site" value="amberwilson.co.uk/blog"/>
-     <input type="text" name="q" placeholder="Search..."/><input type="submit" value="Search"/>
-    </form>
-            <span class="more">
-
-              <h5 class="p-name">24.01.17</h5>
-            <p>  <img src="img/worddoc.jpg" alt="word document">
-
-                <img src="img/book.jpg" alt="content strategy book"></p>
-           <p> I sat down with @adactio of @clearleft to have a talk about what a site revamp entails, and typed up his advice into a word document on my laptop.</p>
-           Before I left I was lent 'Content Strategy' by the lovely @eldevri of @clearleft. She advised me to use a short list of questions to ask my friend about the content of her site.</p>
-<h5 class="p-name">26.01.17</h5>
-<img src="img/book2.jpg" alt="exercise book"></p>
-      <p> Over a lovely coffee, I had a really fun, if somewhat muddled, talk with my friend about her current site. She had printed off the pages on her site and showed me what content she had crossed out (almost all!). I told her I am glad she already understands the need to make site content concise. I wrote down notes on a cute little notebook I had recently bought for myself.</p>
-       <h5 class="p-name">02.02.17</h5>
-      <p>  <img src="img/websiteeg.jpg" alt="example translation website"></p>
-
-      Today my friend sent me a link to this <a href="https://www.wendyweisstranslations.co.uk/">website</a>. See above picture for what she likes about it. It was created with Wix and I found the desktop version to be alright...ish? The mobile version though? No way! So much to improve upon.
-      <h5 class="p-name">03.02.17</h5>
-    <p>   <img src="img/techniques.jpg" alt="ux techniques"></p>
-
-    My friend told me she doesn't find it too fun writing about herself. I suggested the post-it note exercise (for laying out content in order of importance) and encouraged her to write a lot of content in a short amount of time so we can weed out the best stuff later on. Our talk also reminded me to do a mini research project on site comparisons.
-           <p> Later in the day, I read about design personas for websites in Aarron Walter's book 'Designing for Emotion', published by 'A Book Apart'. Aarron (UX designer for Mailchimp) has helpfully created a design persona template for anyone to use.</p>
-           <h5 class="p-name">08.02.17</h5>
-           <p> <img src="img/postits.jpg" alt="post-its for content strategy"></p>
-
-
-       My friend send me a cheerful message and this picture, telling me how she had been doing some content post-it notes (words blurred for privacy!).
-
-       <p> <h5 class="p-name">09.02.17</h5></p>
-       <p> <img src="img/ux.jpg" alt="user experience night"></p>
-       I attended a user experience night run by a nice couple who plan to launch a dinner party website called 'Dinner Circle' @JoinDCircle. The picture shows their web developers from @BoomSolutions. An intense but fascinating night!
-
-       <p> <h5 class="p-name">16.03.17</h5></p>
-
-       A long break - but today my friend sent me the name of her site hosting service (United Hosting) and sent me an e-mail containing a testimonial, a new picture, and the 'ITI' accreditation symbol.
-
-      <p>  <h5 class="p-name">21.03.17</h5></p>
-       <p> <img src="img/contentstrategy.jpg" alt="post-its for content strategy"></p>
-       I sat with the wonderful @eldevri to talk content strategy. She took the content my friend gave me and broke it down into nouns using post-its. She and I then categorised these into groups with specific titles (see pic). A great new technique that I get to test.
-
-       <h5 class="p-name">02.04.17</h5>
-       <p> <img src="img/ux-work.jpg" alt="ux work"></p>
-       I know it's important to focus on the bottom and top parts of the UX process rather than jumping into the middle. So, I considered bottom-level questions such as 'what's the problem?' 'what's the story?', 'what does this site do?', 'how will I spot and solve these problems', 'what tasks can I give to users to test my site?'.
-
-       <h5 class="p-name">03.04.17</h5>
-       <p> <img src="img/mamp.png" alt="mamp"></p>
-       I went through the questions with my friend and got some good insights that I can use for future user research. We discussed the options of writing a new site from scratch or using a CMS like WordPress, which I can practice using my handy MAMP server.
-
-       <h5 class="p-name">04.04.17</h5>
-       <p> <a href="https://www.scribd.com/document/344007783/Persona-One"><img src="img/persona1.png" alt="persona one"></a><a href="https://www.scribd.com/document/344007785/Persona-Two"><img src="img/persona2.png" alt="persona two"></a></p>
-       Using information the discussion, I created two personas based on the types of clients my friend is looking to serve.
-
-       <p><strong><em>Next it is time to create some prototypes, and test them on real users using task analysis and A/B testing. I'll use this <a href="https://www.nngroup.com/articles/task-scenarios-usability-testing/">site</a> for planning and tips.</strong></em></p>
-
-
-</span>
-
-
-        </section>
-
-        <!-- end content	 -->
-        <section>
-          <article>
-              <h3>
-            <a href="mobilefirst/">
-              Mobile First<br>
+  <section class="blog__list">
+    <article>
+      <p>
+        <a href="new-camera/">
+              New Camera
+                    <br>
+                </a>
+        <small>Tuesday, 10th July, 2018</small>
+      </p>
+    </article>
+    <article>
+      <p>
+        <a href="jsconfeu-community-lounge/">
+              JSConf EU: Community Lounge
+                    <br>
+                </a>
+        <small>Thursday, 7th June, 2018</small>
+      </p>
+    </article>
+    <article>
+      <p>
+        <a href="pair-programming/">
+                  Pair Programming
+                    <br>
+                </a>
+        <small>Sunday, 6th May, 2018</small>
+      </p>
+    </article>
+    <article>
+      <p>
+        <a href="apartfromcode/">
+                  Apart From Code
+                    <br>
+                </a>
+        <small>Saturday, 28th April, 2018</small>
+      </p>
+    </article>
+    <article>
+      <p>
+        <a href="jsunconf/">
+                  JSUnconf
+                    <br>
+                </a>
+        <small>Sunday, 22nd April, 2018</small>
+      </p>
+    </article>
+    <article>
+      <p>
+        <a href="house-elves/">
+              House Elves
+                <br>
             </a>
-            <small>Friday, 19 May, 2017</small>
-          </h3>
-        </article>
-          <article>
-              <h3>
-            <a href="btconf/">
-              Btconf Düsseldorf 2017<br>
+        <small>Monday, 2nd April, 2018</small>
+      </p>
+    </article>
+    <article>
+      <p>
+        <a href="nobody-said-css-is-easy/">
+              Nobody Said CSS Is Easy
+                <br>
+            </a>
+        <small>Wednesday, 28th March, 2018</small>
+      </p>
+    </article>
+    <article>
+      <p>
+        <a href="books/">
+              Books
+                <br>
+            </a>
+        <small>Saturday, 23rd March, 2018</small>
+      </p>
+    </article>
+    <article>
+      <p>
+        <a href="beginner-programmer-advice/">
+              Beginner Programmer Advice
+                <br>
+            </a>
+        <small>Tuesday, 13th March, 2018</small>
+      </p>
+    </article>
+    <article>
+      <p>
+        <a href="unit-tests/">
+              Unit Tests
+                <br>
+            </a>
+        <small>Monday, 5th February, 2018</small>
+      </p>
+    </article>
+    <article>
+      <p>
+        <a href="inclusionary-exclusionary-language/">
+              Inclusionary and Exclusionary Language
+                <br>
+            </a>
+        <small>Saturday, 3rd February, 2018</small>
+      </p>
+    </article>
+    <article>
+      <p>
+        <a href="january-journey-job-and-germs-and-self-care/">
+              January, Journey, Job and Germs (& Self-Care)
+                <br>
+            </a>
+        <small>Saturday, 27th January, 2018</small>
+      </p>
+    </article>
+    <article>
+      <p>
+        <a href="what-am-i-looking-for/">
+            What Am I Looking For?
+              <br>
+          </a>
+        <small>Thursday, 7th December, 2017</small>
+      </p>
+    </article>
+    <article>
+      <p>
+        <a href="remembering-why/">
+            Remembering Why
+              <br>
+          </a>
+        <small>Thursday, 7th December, 2017</small>
+      </p>
+    </article>
+    <article>
+      <p>
+        <a href="public-speaking-i-did-it/">
+              Public Speaking - I Did It
+                <br>
+            </a>
+        <small>Thursday, 26th October, 2017</small>
+      </p>
+    </article>
+    <article>
+      <p>
+        <a href="jpg-png-svg/">
+              JPG? PNG? SVG?
+                <br>
+            </a>
+        <small>Monday, 25th September, 2017</small>
+      </p>
+    </article>
+    <article>
+      <p>
+        <a href="nightlybuild2017/">
+              Nightlybuild 2017<br>
 
             </a>
-            <small>Friday, 19 May, 2017</small>
-          </h3>
-        </article>
-          <article>
-              <h3>
-            <a href="httpspoem/">
-              HTTPS Poem<br>
+        <small>Wednesday, 6th September, 2017</small>
+      </p>
+    </article>
+    <article>
+      <p>
+        <a href="3-months-vegan/">
+              3 Months Vegan<br>
 
             </a>
-            <small>Monday, 8 May, 2017</small>
-          </h3>
-        </article>
-          <article>
-              <h3>
-            <a href="storytelling/">
-              Storytelling<br>
+        <small>Monday, 4th September, 2017</small>
+      </p>
+    </article>
+    <article>
+      <p>
+        <a href="newbie-dev-tips/">
+              Newbie Dev Tips<br>
 
             </a>
-            <small>Monday, 8 May, 2017</small>
-          </h3>
-        </article>
+        <small>Tuesday, 29th August, 2017</small>
+      </p>
+    </article>
+    <article>
+      <p>
+        <a href="material-conference/">
+              Material Conference<br>
 
-          <article>
-              <h3>
-            <a href="wilt13april/">
+            </a>
+        <small>Friday, 18th August, 2017</small>
+      </p>
+    </article>
+    <article>
+      <p>
+        <a href="pictures-psychology-piano/">
+              Pictures, Psychology and Piano<br>
+
+            </a>
+        <small>Tuesday, 14th August, 2017</small>
+      </p>
+    </article>
+    <article>
+      <p>
+        <a href="learning/">
+              Learning<br>
+
+            </a>
+        <small>Monday, 3rd July, 2017</small>
+      </p>
+    </article>
+    <article>
+      <p>
+        <a href="wilt22june/">
               What I Learned Today<br>
 
             </a>
-            <small>Thursday, 13 April, 2017</small>
-          </h3>
-        </article>
+        <small>Thursday, 22nd June, 2017</small>
+      </p>
+    </article>
+    <article>
+      <p>
+        <a href="publicspeakingworkshop/">
+              Public Speaking Workshop<br>
+            </a>
+        <small>Thursday, 15th June, 2017</small>
+      </p>
+    </article>
+    <article>
+      <p>
+        <a href="urls/">
+              URLs<br>
+            </a>
+        <small>Wednesday, 7th June, 2017</small>
+      </p>
+    </article>
+    <article>
+      <p>
+        <a href="indiewebcamp/">
+              IndieWebCamp<br>
+            </a>
+        <small>Tuesday, 23rd May, 2017</small>
+      </p>
+    </article>
+    <article>
+      <p>
+        <a href="mobilefirst/">
+              Mobile First<br>
+            </a>
+        <small>Friday, 19th May, 2017</small>
+      </p>
+    </article>
+    <article>
+      <p>
+        <a href="btconf/">
+              Btconf Düsseldorf 2017<br>
 
-          <article>
-              <h3>
-            <a href="preparingtotalk/">
+            </a>
+        <small>Friday, 19th May, 2017</small>
+      </p>
+    </article>
+    <article>
+      <p>
+        <a href="httpspoem/">
+              HTTPS Poem<br>
+
+            </a>
+        <small>Monday, 8th May, 2017</small>
+      </p>
+    </article>
+    <article>
+      <p>
+        <a href="storytelling/">
+              Storytelling<br>
+
+            </a>
+        <small>Monday, 8th May, 2017</small>
+      </p>
+    </article>
+
+    <article>
+      <p>
+        <a href="wilt13april/">
+              What I Learned Today<br>
+
+            </a>
+        <small>Thursday, 13 April, 2017</small>
+      </p>
+    </article>
+
+    <article>
+      <p>
+        <a href="preparingtotalk/">
               Preparing to Talk<br>
 
             </a>
-            <small>Thursday, 13 April, 2017</small>
-          </h3>
-        </article>
-          <article>
-              <h3>
-            <a href="cookies/">
+        <small>Thursday, 13th April, 2017</small>
+      </p>
+    </article>
+    <article>
+      <p>
+        <a href="cookies/">
               Cookies - An introduction<br>
 
             </a>
-            <small>Tuesday, 11 April, 2017</small>
-          </h3>
-        </article>
-          <article>
-              <h3>
-            <a href="ux-curriculum/">
+        <small>Tuesday, 11th April, 2017</small>
+      </p>
+    </article>
+    <article>
+      <p>
+        <a href="ux-curriculum/">
               UX Curriculum<br>
 
             </a>
-            <small>Saturday, 8 April, 2017</small>
-          </h3>
-        </article>
-          <article>
-              <h3>
-            <a href="getvspost/">
+        <small>Saturday, 8th April, 2017</small>
+      </p>
+    </article>
+    <article>
+      <p>
+        <a href="getvspost/">
               GET vs. POST Requests<br>
 
             </a>
-            <small>Monday, 27 March, 2017</small>
-          </h3>
-        </article>
-          <article>
-              <h3>
-            <a href="markup-masterclass/">
+        <small>Monday, 27th March, 2017</small>
+      </p>
+    </article>
+    <article>
+      <p>
+        <a href="markup-masterclass/">
               Markup-Masterclass<br>
 
             </a>
-            <small>Thursday, 16 March, 2017</small>
-          </h3>
-          </article>
-          <article>
-              <h3>
-            <a href="webvsinternet/">
+        <small>Thursday, 16th March, 2017</small>
+      </p>
+    </article>
+    <article>
+      <p>
+        <a href="webvsinternet/">
               The Internet and The World Wide Web<br>
 
             </a>
-            <small>Thursday, 16 March, 2017</small>
-          </h3>
-          </article>
-          <article>
-              <h3>
-            <a href="podcasts/">
+        <small>Thursday, 16th March, 2017</small>
+      </p>
+    </article>
+    <article>
+      <p>
+        <a href="podcasts/">
               Podcasts and Knowledge Sharing<br>
 
             </a>
-            <small>Tuesday, 7 March, 2017</small>
-          </h3>
-          </article>
-            <article>
-                <h3>
-              <a href="mentorship/">
+        <small>Tuesday, 7th March, 2017</small>
+      </p>
+    </article>
+    <article>
+      <p>
+        <a href="mentorship/">
                 Mentorship<br>
 
               </a>
-              <small>Monday, 6 March, 2017</small>
-            </h3>
-            </article>
-            <article>
-                <h3>
-              <a href="germanytrip/">
+        <small>Monday, 6th March, 2017</small>
+      </p>
+    </article>
+    <article>
+      <p>
+        <a href="germanytrip/">
                 Germany Trip<br>
 
               </a>
-              <small>Thursday, 2 March, 2017</small>
-            </h3>
-            </article>
+        <small>Thursday, 2nd March, 2017</small>
+      </p>
+    </article>
+  </section>
 
-          </p>
-        </section>
+  <footer class="homepage__footer">
+    <small> © 2018 <a class="p-author h-card" href="https://amberwilson.co.uk/">Amber Wilson</a>.</small>
+  </footer>
 
-
-  <div><p>Subscribe<a title="Articles RSS feed" target="_blank" href="amber.atom"> here!</a></div>
-
-        <footer>
-            <small> © 2017 <a class="p-author h-card" href="https://amberwilson.co.uk/">Amber Wilson</a>.</small>
-        </footer>
-    </div>
-
-    <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
-    <script type="text/javascript" src="/js/script.js"></script>
+  <script type="text/javascript" src="/js/script.js"></script>
 </body>
 
 </html>
