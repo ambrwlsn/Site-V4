@@ -1,0 +1,87 @@
+.container {
+  z-index: 1;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 5em;
+}
+
+.rabbit {
+  background-image: url("../img/rabbit-cells.svg");
+  background-size: auto 100%;
+  width: 174px;
+  height: 250px;
+  will-change: background-position;
+
+  animation-name: run-cycle;
+  animation-timing-function: steps(10);
+  animation-iteration-count: infinite;
+}
+.rabbit--one {
+  animation-duration: 1s;
+  animation-delay: -0.5s;
+}
+
+.rabbit-container {
+  position: absolute;
+  left: -10%;
+  transform: scale(0) translateX(-10vw);
+  will-change: transform;
+
+  animation-name: run-right-one;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+.rabbit-container--one {
+  animation-duration: 5s;
+  animation-delay: -0.5s;
+}
+
+@keyframes run-cycle {
+  100% {
+    background-position: -1800px 0;
+  }
+}
+
+@keyframes run-right-one {
+  0% {
+    transform: scale(0.4) translateX(-10vw);
+  }
+
+  10% {
+    transform: translateY(0vh) translateX(10vw) scale(0.4);
+  }
+
+  20% {
+    transform: translateY(0vh) translateX(30vw) scale(0.4);
+  }
+
+  30% {
+    transform: translateY(0vh) translateX(50vw) scale(0.4);
+  }
+
+  40% {
+    transform: translateY(0vh) translateX(70vw) scale(0.4);
+  }
+
+  50% {
+    transform: translateY(0vh) translateX(90vw) scale(0.4);
+  }
+
+  60% {
+    transform: translateY(0vh) translateX(110vw) scale(0.4);
+  }
+
+  100% {
+    transform: translateY(0vh) translateX(110vw) scale(0.4);
+  }
+}
+
+@media screen and (min-width: 700px) {
+  .rabbit-container--one {
+    animation-duration: 7.5s;
+    animation-delay: -6s;
+  }
+}

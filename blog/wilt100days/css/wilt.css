@@ -161,16 +161,6 @@ blockquote p {
 
 /* End dropdown menu */
 
-.button__top-of-page {
-  width: 0.8em;
-}
-
-.button__top-of-page:hover {
-  animation: pulse 1.5s;
-  animation: pulse 1s forwards;
-  -webkit-animation: pulse 1s forwards;
-}
-
 @keyframes pulse {
   0% {
     background-color: white;

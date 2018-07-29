@@ -1,5 +1,28 @@
-@import url("https://fonts.googleapis.com/css?family=Roboto:500");
-@import url("https://fonts.googleapis.com/css?family=Quattrocento");
+/*
+  Fonts
+*/
+
+/* @import url("https://fonts.googleapis.com/css?family=Roboto:500"); */
+/* @import url("https://fonts.googleapis.com/css?family=Quattrocento"); */
+
+/* Importing local fonts rather than sending a request */
+
+@font-face {
+  font-family: "Quattrocento";
+  font-style: normal;
+  font-weight: 700;
+  src: url("/fonts/Quattrocento/Quattrocento-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Roboto";
+  font-weight: 300;
+  src: url("/fonts/Roboto/Roboto-Medium.ttf") format("truetype");
+}
+/* 
+  End fonts
+*/
+
 /**
   * Start of site-wide styles
   */
@@ -58,7 +81,6 @@ footer {
 img {
   max-width: 100%;
 }
-
 a {
   text-decoration: none;
   color: #e65954;
@@ -154,6 +176,37 @@ nav a {
   font-size: 0.9em;
 }
 
+blockquote {
+  background: #f9f9f9;
+  border-left: 10px solid #ccc;
+  margin: 1.5em 10px;
+  padding: 0.5em 10px;
+  quotes: "“" "”" "‘" "’";
+}
+
+blockquote:before {
+  color: #ccc;
+  content: "“";
+  font-size: 4em;
+  line-height: 0.1em;
+  margin-right: 0.25em;
+  vertical-align: -0.4em;
+}
+
+blockquote p {
+  display: inline;
+}
+
+figure {
+  margin: 0;
+}
+
+figcaption {
+  font-family: "Roboto", sans-serif;
+  font-size: 0.8em;
+  text-align: center;
+}
+
 /**
   * End of general blog styles
   */
@@ -183,20 +236,16 @@ pre code {
   text-decoration: underline;
 }
 
-figure {
+.figure__border {
   display: inline-block;
 }
 
-figure img {
+.figure__border img {
   border: 1px #000 solid;
 }
 
-figure img:hover {
+.figure__border img:hover {
   outline: 3px #000 solid;
-}
-
-figcaption {
-  font-size: 1.2rem;
 }
 
 .long__item--margin-bottom li {
@@ -220,6 +269,33 @@ figcaption {
   width: 20vw;
   height: auto;
   display: block;
+}
+
+.button__top-of-page {
+  width: 0.8em;
+}
+
+.link__top-of-page {
+  display: inline-flex;
+}
+
+.button__top-of-page:hover {
+  animation: pulse 1.5s;
+  animation: pulse 1s forwards;
+  -webkit-animation: pulse 1s forwards;
+}
+
+.image__grid--two {
+  display: flex;
+  flex-direction: column;
+}
+
+.image__grid--two .item2 {
+  margin-bottom: 1em;
+}
+
+.grid__captions--two {
+  font-size: 0.7em;
 }
 
 /**
@@ -388,6 +464,29 @@ figcaption {
     /* 2. */
     margin: auto auto 0px 0;
     padding: 0;
+  }
+}
+
+@media screen and (min-width: 700px) {
+  .image__grid--two {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .grid__captions--two {
+    grid-template-areas: "a b" "c d";
+  }
+
+  .image__grid--two .item1 {
+    grid-area: a;
+  }
+  .image__grid--two .item2 {
+    grid-area: c;
+  }
+  .image__grid--two .item3 {
+    grid-area: b;
+  }
+  .image__grid--two .item4 {
+    grid-area: d;
   }
 }
 
