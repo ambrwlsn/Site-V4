@@ -48,7 +48,7 @@ blockquote p {
   /* display: inline-block; */
   display: flex;
   text-align: left;
-  width: 15em;
+  width: 17em;
   margin: 0 auto;
 }
 
@@ -118,7 +118,7 @@ blockquote p {
   line-height: 2em;
   background-color: #fff;
   border: 1px solid #000;
-  width: 15em;
+  width: 17em;
   height: 6em;
   overflow: auto;
   font-family: "Roboto", sans-serif;

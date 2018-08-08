@@ -6,7 +6,19 @@
     <title>Amber's Blog</title>
     <link href="https://amberwilson.co.uk/blog/amber.atom" rel="self"/>
     <id>https://amberwilson.co.uk/blog</id>
-    <updated>2018-07-30T09:32:33Z</updated>
+    <updated>2018-08-04T19:47:51Z</updated>
+     <entry>
+            <title>Build Yourself Up</title>
+            <author>
+                    <name>Amber Wilson</name>
+            </author>
+            <link href="https://amberwilson.co.uk/blog/build-yourself-up/"/>
+            <id>https://amberwilson.co.uk/blog/build-yourself-up/</id>
+            <updated>2018-08-04T19:47:51Z</updated>
+            <summary>
+            </summary>
+            <content type="application/xhtml+xml" src="https://amberwilson.co.uk/blog/build-yourself-up/"/>
+        </entry>
         <entry>
             <title>Scotland CSS | Scotland JS</title>
             <author>

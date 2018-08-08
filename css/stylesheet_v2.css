@@ -399,6 +399,24 @@ pre code {
   * End of word page styles
   */
 
+.background__skull-pixelated {
+  height: 75vw;
+  width: 75vw;
+  background-image: url(../blog/playing-with-pixels/img/skull2.png);
+  background-size: 25vw 25vw;
+  background-repeat: repeat;
+  margin-bottom: 1vw;
+}
+
+.background__skull-graffiti {
+  height: 75vw;
+  width: 75vw;
+  background-image: url(../blog/playing-with-pixels/img/skull-graffiti.png);
+  background-size: 25vw 25vw;
+  background-repeat: repeat;
+  margin-bottom: 1vw;
+}
+
 /* **** <<<< !!!! BEGINNING OF DESKTOP STYLES !!!! >>>> **** */
 
 @media only screen and (min-width: 520px) {
