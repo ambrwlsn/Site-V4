@@ -6,8 +6,20 @@
     <title>Amber's Blog</title>
     <link href="https://amberwilson.co.uk/blog/amber.atom" rel="self"/>
     <id>https://amberwilson.co.uk/blog</id>
-    <updated>2018-08-04T19:47:51Z</updated>
-     <entry>
+    <updated>2018-08-08T20:12:46Z</updated>
+         <entry>
+            <title>Playing with Pixels</title>
+            <author>
+                    <name>Amber Wilson</name>
+            </author>
+            <link href="https://amberwilson.co.uk/blog/playing-with-pixels/"/>
+            <id>https://amberwilson.co.uk/blog/playing-with-pixels/</id>
+            <updated>2018-08-08T20:12:46Z</updated>
+            <summary>
+            </summary>
+            <content type="application/xhtml+xml" src="https://amberwilson.co.uk/blog/playing-with-pixels/"/>
+        </entry>
+        <entry>
             <title>Build Yourself Up</title>
             <author>
                     <name>Amber Wilson</name>
