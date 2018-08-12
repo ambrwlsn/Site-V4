@@ -272,7 +272,8 @@
                     <pre><code>{
     "name": "Amber Wilson",
     "homepage": "https://amberwilson.co.uk",
-    "picture": "https://twitter.com/account/profil_image/ambrwlsn90"
+    "picture": "https://twitter.com/account/
+    profil_image/ambrwlsn90"
 }
 </code></pre> Here is similar information in JSON-LD format:
                     <pre>
@@ -573,37 +574,55 @@ const catDog = catsRule ?
                         <em>pure</em>, i.e. they have no side effects, rely on the input you give them, and will always produce
                         the same output given the same input.
                     </p>
-                    <p>So, I use these more and more at work and they are definitely a pleasure to work with! There are quite
-                        a lot of them (I think around 50), but there are some more frequently used ones that cover most use
-                        cases, such as <code>sort()</code>, <code>map()</code>, <code>filter()</code>, and <code>reduce()</code>.
+                    <p>So, I use array methods more and more at work and they are definitely a pleasure to work with! There
+                        are quite a lot of them (I think around 50), but there are some more frequently used ones that cover
+                        most use cases, such as <code>sort()</code>, <code>map()</code>, <code>filter()</code>, and <code>reduce()</code>.
                         I was inspired to write about them after reading <a href="https://hackernoon.com/a-quick-introduction-to-functional-javascript-7e6fe520e7fa">this</a>                        post by <a href="https://twitter.com/chalarangelo">Angelos Chalaris</a>! Please check out his post
                         because there are <em>great</em> examples & explanations in there!</p>
                     <p>Of course, since I like them so much, I wanted to give an example here. The one I used most at work is
-                        <code>map()</code> but I didn't choose it because I gave an example of it in <a href="https://amberwilson.co.uk/blog/wilt100days/#arrowfunctions">Day 2</a>:)
-                        As a side note, if you look carefully at the example in Day 2's lesson, you'll see how the elements
+                        <code>map()</code> but I didn't choose it because I gave an example of it in <a href="https://amberwilson.co.uk/blog/wilt100days/#arrowfunctions">Day 2</a>                        :) As a side note, if you look carefully at the example in Day 2's lesson, you'll see how the elements
                         array takes the map function, which in turn takes a function as its input, and returns a value based
                         on the input. Below, I decided to create an example of <code>reduce()</code>.</p>
                     <pre><code>const initialCatRating = [10, 10, 10];
-const accurateCatRating = initialCatRating.reduce((total, amount) => {
+const accurateCatRating = initialCatRating.reduce(<span class="text__highlight">(total, amount) => {
     total.push(amount * 2);
     return total;
-}, []);
+}</span>, []);
 
 accurateCatRating // [20, 20, 20]
 </code></pre>
-                    <p>My example shows one of the <strong>many</strong> things reduce can do - alter values in an array, and
-                        push the altered values into a new array! This means a brand new array is returned, rather than altering
-                        the initial array. Let me explain what's happening. We have our <code>initialCatRating</code> variable,
-                        which shows ratings of cats out of ten. In our <code>accurateCatRating</code> variable, we call reduce
-                        on <code>initialCatRating</code> and give the paramaters <code>total</code> and <code>amount</code>.
-                        The reduce function actually takes, as its arguments, a callback function containing at least two
-                        and up to four parameters (<code>accumulator, currentValue, currentIndex, array</code>), and an initial
-                        value: <code>arr.reduce(callback[, initialValue]</code>. In my example, the array (initialCatRating)
-                        is chained to the reduce function. The accumulator is the total and currentValue is the amount.</p>
-                    <p>Discover and be amazed at what reduce can do <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/Reduce">here</a>                        and <a href="https://medium.freecodecamp.org/reduce-f47a7da511a9">here</a>.</p>
-                    <p>I can't explain everything reduce does and how it works (not enough space), so check out the examples
-                        and explanations in the links above and try some <code>Array.Prototype</code> methods out in the
-                        console! :)
+                    <p>This example shows one of the <strong>many</strong> things reduce can do - alter values in an array,
+                        and push the altered values into a new array! This means a brand new array is returned, rather than
+                        altering the initial array. Let me explain what's happening: </p>
+
+                    <p>There is an <code>initialCatRating</code> variable, which shows ratings of cats out of ten. In the <code>accurateCatRating</code>                        variable, <code>reduce()</code> is called on <code>initialCatRating</code>.</p>
+                    <p>The first argument in <code>reduce()</code> is a callback function (see this in <span class="text__highlight">pink</span>                        above). The callback takes at least two and up to four arguments (<code>accumulator, currentValue, currentIndex, array</code>).
+                        The above example has taken two - <code>total</code> and
+                        <code>amount</code>, which are actually <code>accumulator</code> and <code>currentValue</code>. Naming
+                        doesn't matter here, but order does.</p>
+                    <p> The second argument in <code>reduce()</code> is <code>initialValue</code>, which is optional. In the
+                        above example, <code>initialValue</code> is an empty array. The callback only operates on every element
+                        in an <em>array</em> when
+                        <code>initialValue</code> is present, so for the above example it is not optional.</p>
+                    <p>Putting the callback and <code>initialValue</code> together allows <code>reduce()</code> to take each
+                        element in the given array and operate on it, then push the returned values (using <code>push()</code>                        - another array method) into a new array.</p>
+                    <p>Of course, to make it re-usable, you can extract the callback function from the above example into something
+                        like:
+                    </p>
+                    <pre><code>const doubleMyValue = (total, amount) => {
+    total.push(amount * 2);
+    return total;
+};
+</code></pre>
+                    <p>Then, it can be put straight into <code>reduce()</code> (as an argument), to read:</p>
+                    <pre><code>const initialCatRating = [10, 10, 10];
+const accurateCatRating = initialCatRating.reduce(doubleMyValue , []);
+
+accurateCatRating // [20, 20, 20]
+    </code></pre>
+
+                    <p>I can't explain everything reduce does and how it works (not enough space), so please discover and be
+                        amazed at what <code>reduce()</code> can do <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/Reduce">here</a>                        and <a href="https://medium.freecodecamp.org/reduce-f47a7da511a9">here</a>. And try some <code>Array.Prototype</code>                        methods out in your browser console! :)
                     </p>
                 </article>
     </section>
