@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="403px" height="402px" viewBox="0 0 403 402" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49.3 (51167) - http://www.bohemiancoding.com/sketch -->
+    <title>Group</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Group">
+            <ellipse id="Oval" fill="#BFBFBF" cx="190.5" cy="112" rx="114.5" ry="112"></ellipse>
+            <ellipse id="Oval" fill="#BFBFBF" cx="201.5" cy="282" rx="201.5" ry="120"></ellipse>
+            <ellipse id="Oval-2" fill="#BFBFBF" cx="262.5" cy="28" rx="28.5" ry="28"></ellipse>
+            <ellipse id="Oval-2" fill="#BFBFBF" cx="114.5" cy="28" rx="28.5" ry="28"></ellipse>
+            <path d="M356.005037,136 C376,113 391.287366,133.275801 391.972997,155.731521 C392.511737,173.376259 384.061257,197.719659 366.621558,228.761721 C364.702593,232.177408 360.592284,233.700808 356.910733,232.360834 L318.269706,218.296656 C314.117879,216.785515 311.977181,212.194773 313.488322,208.042946 C313.611504,207.704507 313.7574,207.374773 313.925014,207.055994 C334.017774,168.842314 348.044449,145.156982 356.005037,136 Z" id="Rectangle" fill="#BFBFBF"></path>
+            <path d="M162,128 L219,128 C219,150.361923 209.5,161.542884 190.5,161.542884 C171.5,161.542884 162,150.361923 162,128 Z" id="Path-2" fill="#FFFFFF"></path>
+            <ellipse id="Oval-3" fill="#FFFFFF" cx="232" cy="85" rx="21" ry="26"></ellipse>
+            <ellipse id="Oval-3" fill="#FFFFFF" cx="149" cy="85" rx="21" ry="26"></ellipse>
+        </g>
+    </g>
+</svg>
